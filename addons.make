@@ -1,2 +1,5 @@
+ofxEasing
 ofxGui
 ofxNetwork
+ofxPostGlitch
+ofxSceneManager

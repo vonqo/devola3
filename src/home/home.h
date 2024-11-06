@@ -12,6 +12,7 @@
 
 #include "ofMain.h"
 #include "ofxGui.h"
+#include "ofxSceneManager.h"
 
 class home : public ofBaseApp{
 
@@ -32,11 +33,18 @@ class home : public ofBaseApp{
         void dragEvent(ofDragInfo dragInfo);
         void gotMessage(ofMessage msg);
     
-    ofxPanel gui;
-    ofxButton button;
-    
-    ofxIntField screenWidthField;
-    ofxIntField screenHeightField;
+    private:
+        void changeScene();
+        
+        ofxSceneManager sceneManager;
+        ofImage carpet;
+        
+        ofxPanel gui;
+        ofxButton button;
+        
+        ofxIntField screenWidthField;
+        ofxIntField screenHeightField;
+        ofShader shader;
         
 };
 

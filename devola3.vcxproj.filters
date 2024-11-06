@@ -7,6 +7,12 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
+		<ClCompile Include="src\home\home.cpp">
+			<Filter>src\home</Filter>
+		</ClCompile>
+		<ClCompile Include="src\scene\ofApp.cpp">
+			<Filter>src\scene</Filter>
+		</ClCompile>
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src\ofxBaseGui.cpp">
 			<Filter>addons\ofxGui\src</Filter>
 		</ClCompile>
@@ -52,30 +58,66 @@
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetworkUtils.cpp">
 			<Filter>addons\ofxNetwork\src</Filter>
 		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.cpp">
+			<Filter>addons\ofxPostGlitch\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.cpp">
+			<Filter>addons\ofxSceneManager\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.cpp">
+			<Filter>addons\ofxSceneManager\src</Filter>
+		</ClCompile>
 	</ItemGroup>
 	<ItemGroup>
 		<Filter Include="src">
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
+		<Filter Include="src\home">
+			<UniqueIdentifier>{FBFCE792--44A-7-44-1B-8-033-2556D0D76D84}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\scene">
+			<UniqueIdentifier>{0E9054D5--977-6-4B-C6-B-A3A-64FF9AD3A65F}</UniqueIdentifier>
+		</Filter>
 		<Filter Include="addons">
-			<UniqueIdentifier>{7B4D24A1--5CB-F-49-59-B-260-54F90C97E272}</UniqueIdentifier>
+			<UniqueIdentifier>{9108C969--A5C-D-45-06-9-D58-8EACE1F0B5C6}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxGui">
-			<UniqueIdentifier>{A2B24848--696-5-4E-DC-8-774-475D0DCEDB24}</UniqueIdentifier>
+			<UniqueIdentifier>{C0040820--8A1-0-40-17-B-F83-04FFDC142C40}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxGui\src">
-			<UniqueIdentifier>{F0F4835D--1B0-7-4D-A6-B-FBD-A837A73EA5C6}</UniqueIdentifier>
+			<UniqueIdentifier>{7743611B--270-1-49-6D-9-129-55891C411524}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxNetwork">
-			<UniqueIdentifier>{B2E96148--37A-9-43-BF-B-087-85602739F914}</UniqueIdentifier>
+			<UniqueIdentifier>{8A9513A3--3C4-7-49-E3-9-4DA-43E6281E1B8B}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxNetwork\src">
-			<UniqueIdentifier>{C7C28FA5--45B-6-44-FE-9-BA5-25B290AB4DE2}</UniqueIdentifier>
+			<UniqueIdentifier>{E4A5AA2B--A6B-1-48-C9-8-F74-F4B115691C71}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPostGlitch">
+			<UniqueIdentifier>{9A4AAE95--ADA-E-4D-59-8-31F-004E149CE1D2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPostGlitch\src">
+			<UniqueIdentifier>{FD93E174--4CE-6-4C-47-B-D13-D37D097673E5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPostGlitch\src\shaders">
+			<UniqueIdentifier>{545296EA--ECE-A-43-40-9-ABE-2FEFC5F1F23A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSceneManager">
+			<UniqueIdentifier>{BC11AD84--4E6-9-4F-BD-B-00E-15F4EA4819C3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSceneManager\src">
+			<UniqueIdentifier>{EFEC6733--E11-F-4A-E4-A-09C-1BF79A5DB08E}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\home\home.h">
+			<Filter>src\home</Filter>
+		</ClInclude>
+		<ClInclude Include="src\scene\ofApp.h">
+			<Filter>src\scene</Filter>
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src\ofxGuiGroup.h">
 			<Filter>addons\ofxGui\src</Filter>
@@ -136,6 +178,69 @@
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPServer.h">
 			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.h">
+			<Filter>addons\ofxPostGlitch\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Twist.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Invert.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Noise.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrGreeninvert.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Outline.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Convergence.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\PGShaderConstants.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Swell.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrRedinvert.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Glow.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrRedraise.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrBlueinvert.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CutSlider.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrGreenraise.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrHighContrast.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Shaker.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrBlueraise.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Slitscan.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.h">
+			<Filter>addons\ofxSceneManager\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.h">
+			<Filter>addons\ofxSceneManager\src</Filter>
 		</ClInclude>
 	</ItemGroup>
 	<ItemGroup>

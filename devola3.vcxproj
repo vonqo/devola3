@@ -61,7 +61,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src\home;src;src\scene;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<MultiProcessorCompilation>true</MultiProcessorCompilation>
 			<ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
@@ -84,7 +84,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src\home;src;src\scene;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
 			<LanguageStandard>stdcpp17</LanguageStandard>
@@ -106,6 +106,8 @@
 	<ItemGroup>
 		<ClCompile Include="src\main.cpp" />
 		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="src\home\home.cpp" />
+		<ClCompile Include="src\scene\ofApp.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src\ofxBaseGui.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src\ofxColorPicker.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src\ofxSliderGroup.cpp" />
@@ -121,9 +123,14 @@
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPManager.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPClient.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetworkUtils.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.cpp" />
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="src\home\home.h" />
+		<ClInclude Include="src\scene\ofApp.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src\ofxGuiGroup.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src\ofxToggle.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxGui\src\ofxSlider.h" />
@@ -144,6 +151,27 @@
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPSettings.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPManager.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPServer.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Twist.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Invert.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Noise.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrGreeninvert.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Outline.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Convergence.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\PGShaderConstants.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Swell.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrRedinvert.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Glow.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrRedraise.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrBlueinvert.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CutSlider.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrGreenraise.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrHighContrast.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Shaker.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrBlueraise.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Slitscan.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.h" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

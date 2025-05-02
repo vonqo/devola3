@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp">
+			<Filter>addons\ofxDatGui\src\core</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\ofxDatGui.cpp">
+			<Filter>addons\ofxDatGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp">
+			<Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSONElement.cpp">
+			<Filter>addons\ofxJSON\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src\jsoncpp.cpp">
+			<Filter>addons\ofxJSON\libs\jsoncpp\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPManager.cpp">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPServer.cpp">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPManager.cpp">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPClient.cpp">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetworkUtils.cpp">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.cpp">
+			<Filter>addons\ofxPostGlitch\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\BleachBypassPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\DofPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\EdgePass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\BloomPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RGBShiftPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ZoomBlurPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\PixelatePass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\HsbShiftPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ConvolutionPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\VerticalTiltShifPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\PostProcessing.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RenderPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\DofAltPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\FakeSSSPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\GodRaysPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\LUTPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\HorizontalTiltShifPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\SSAOPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RimHighlightingPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\KaleidoscopePass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ToonPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\LimbDarkeningPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\NoiseWarpPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ContrastPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\FxaaPass.cpp">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.cpp">
+			<Filter>addons\ofxSceneManager\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.cpp">
+			<Filter>addons\ofxSceneManager\src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{88AFDE10--C55-3-4F-97-8-80C-DF2C68687394}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxDatGui">
+			<UniqueIdentifier>{1294AF77--2FA-6-42-C5-A-76D-0535CCE7E2FD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxDatGui\src">
+			<UniqueIdentifier>{4C98ECF3--CCD-D-4B-D3-A-A9F-E2AA22422299}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxDatGui\src\core">
+			<UniqueIdentifier>{38DB77F4--48C-C-44-97-A-488-FE6B1B9B24B2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxDatGui\src\libs">
+			<UniqueIdentifier>{C67281F7--F32-0-49-EB-B-D49-AB5BBB094DB0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxDatGui\src\libs\ofxSmartFont">
+			<UniqueIdentifier>{F939BE29--573-D-42-E1-9-F4E-6EFE4700EA47}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxDatGui\src\components">
+			<UniqueIdentifier>{0719952A--B68-F-43-DF-8-E80-9BCF09D4D988}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxDatGui\src\themes">
+			<UniqueIdentifier>{D2337650--ADE-1-4B-9F-A-1B3-6A8F763D006D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxJSON">
+			<UniqueIdentifier>{915B7C0E--446-7-42-2A-A-633-2DFECEDE24F6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxJSON\src">
+			<UniqueIdentifier>{9B5B647F--C68-3-4F-C9-8-C59-B1C5AA74B2BD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxJSON\libs">
+			<UniqueIdentifier>{735F4485--E5E-C-48-6E-9-888-67715268ED8A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxJSON\libs\jsoncpp">
+			<UniqueIdentifier>{3B7C0C37--AC9-9-4F-5E-8-3DF-6AA51342559D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxJSON\libs\jsoncpp\include">
+			<UniqueIdentifier>{0B74C59B--03B-7-45-A0-9-B96-87B7E59747AD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxJSON\libs\jsoncpp\include\json">
+			<UniqueIdentifier>{CB871707--558-7-47-9B-A-70C-627104D7811F}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxJSON\libs\jsoncpp\src">
+			<UniqueIdentifier>{E77E67B7--673-A-4B-15-9-E21-AB8D06B3C05B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxNetwork">
+			<UniqueIdentifier>{4DFCFDA7--8A9-C-4F-C4-A-2F9-F0E987324353}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxNetwork\src">
+			<UniqueIdentifier>{B0B13225--6C2-6-46-F0-8-8C8-83101E9E1B99}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPostGlitch">
+			<UniqueIdentifier>{A6577D9F--FF0-C-47-72-A-55F-A62EFA4A1140}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPostGlitch\src">
+			<UniqueIdentifier>{13477BE8--189-6-4B-10-8-ACD-D49E4810092A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPostGlitch\src\shaders">
+			<UniqueIdentifier>{84477B29--F75-8-48-30-8-AA8-CA11F4F94958}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPostProcessing">
+			<UniqueIdentifier>{17C6741F--F4B-7-40-29-B-C05-1B4ADF87E480}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPostProcessing\src">
+			<UniqueIdentifier>{69F4D507--4E7-3-48-B3-8-BFC-4BD1439C9C95}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSceneManager">
+			<UniqueIdentifier>{0BD3435F--DEB-4-4E-11-8-FFE-CC4098522255}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSceneManager\src">
+			<UniqueIdentifier>{0E0A2A30--4D8-C-4F-FA-8-420-2DF9FBCC2D5D}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h">
+			<Filter>addons\ofxDatGui\src\core</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiConstants.h">
+			<Filter>addons\ofxDatGui\src\core</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiEvents.h">
+			<Filter>addons\ofxDatGui\src\core</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.h">
+			<Filter>addons\ofxDatGui\src\core</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\ofxDatGui.h">
+			<Filter>addons\ofxDatGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.h">
+			<Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiColorPicker.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiSlider.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiFRM.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiTimeGraph.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiTextInputField.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiButton.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiControls.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiGroups.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiScrollView.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiLabel.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGui2dPad.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiTextInput.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiMatrix.h">
+			<Filter>addons\ofxDatGui\src\components</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes\ofxDatGuiTheme.h">
+			<Filter>addons\ofxDatGui\src\themes</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h">
+			<Filter>addons\ofxDatGui\src\themes</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSON.h">
+			<Filter>addons\ofxJSON\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSONElement.h">
+			<Filter>addons\ofxJSON\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json\json-forwards.h">
+			<Filter>addons\ofxJSON\libs\jsoncpp\include\json</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json\json.h">
+			<Filter>addons\ofxJSON\libs\jsoncpp\include\json</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPManager.h">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPClient.h">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetwork.h">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPSettings.h">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetworkUtils.h">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPSettings.h">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPManager.h">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPServer.h">
+			<Filter>addons\ofxNetwork\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.h">
+			<Filter>addons\ofxPostGlitch\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Twist.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Invert.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Noise.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrGreeninvert.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Outline.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Convergence.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\PGShaderConstants.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Swell.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrRedinvert.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Glow.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrRedraise.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrBlueinvert.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CutSlider.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrGreenraise.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrHighContrast.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Shaker.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrBlueraise.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Slitscan.h">
+			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\LUTPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RimHighlightingPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RenderPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ContrastPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\FxaaPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\LimbDarkeningPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ofxPostProcessing.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\VerticalTiltShifPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ConvolutionPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\BleachBypassPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\FakeSSSPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\HorizontalTiltShifPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\SSAOPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\DofPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ToonPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\HsbShiftPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\PixelatePass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ZoomBlurPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\BloomPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RGBShiftPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\KaleidoscopePass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\DofAltPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\GodRaysPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\NoiseWarpPass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\PostProcessing.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\EdgePass.h">
+			<Filter>addons\ofxPostProcessing\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.h">
+			<Filter>addons\ofxSceneManager\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.h">
+			<Filter>addons\ofxSceneManager\src</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>

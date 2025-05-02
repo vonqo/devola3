@@ -1,0 +1,6 @@
+ofxDatGui
+ofxJSON
+ofxNetwork
+ofxPostGlitch
+ofxPostProcessing
+ofxSceneManager

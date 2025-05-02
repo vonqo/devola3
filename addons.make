@@ -1,4 +1,5 @@
 ofxDatGui
+ofxEasing
 ofxJSON
 ofxNetwork
 ofxPostGlitch

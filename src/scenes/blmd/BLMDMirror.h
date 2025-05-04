@@ -19,7 +19,6 @@ public:
     BLMDMirror(ofEvent<ofSoundBuffer> & soundInEv) {
         ev = soundInEv;
         ofAddListener(soundInEv, this, &BLMDMirror::onAudioInput);
-        ofLogNotice() << "listener attached";
     }
     
     ~BLMDMirror(){
@@ -29,7 +28,7 @@ public:
     void start() override;
     void update() override;
     void draw() override;
-//    void keyPressed(int key) override;
+    void keyPressed(int key) override;
 //    void keyReleased(int key) override;
 //    void mouseMoved(int x, int y) override;
 //    void mouseDragged(int x, int y, int button) override;
@@ -42,5 +41,10 @@ public:
 //    void dragEvent(ofDragInfo dragInfo) override;
 //    void gotMessage(ofMessage msg) override;
     void onAudioInput(ofSoundBuffer & input);
+    
+    bool nextCarpet = false;
+    float energy = 0;
+    float carpetBase = 1;
+    ofShader mirrorShader;
     
 };

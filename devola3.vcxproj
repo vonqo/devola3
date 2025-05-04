@@ -61,7 +61,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;src\scenes\blmd;src\scenes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<MultiProcessorCompilation>true</MultiProcessorCompilation>
 			<ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
@@ -84,7 +84,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;src\scenes\blmd;src\scenes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
 			<LanguageStandard>stdcpp17</LanguageStandard>
@@ -106,9 +106,15 @@
 	<ItemGroup>
 		<ClCompile Include="src\main.cpp" />
 		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="src\scenes\blmd\BLMDBlank.cpp" />
+		<ClCompile Include="src\scenes\blmd\BLMDDatamosh.cpp" />
+		<ClCompile Include="src\scenes\blmd\BLMDGlitch.cpp" />
+		<ClCompile Include="src\scenes\blmd\BLMDMenger.cpp" />
+		<ClCompile Include="src\scenes\blmd\BLMDMirror.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\ofxDatGui.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src\easing_terms_of_use.html" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSONElement.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src\jsoncpp.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPManager.cpp" />
@@ -147,6 +153,12 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="src\scenes\blmd\BLMDBlank.h" />
+		<ClInclude Include="src\scenes\blmd\BLMDDatamosh.h" />
+		<ClInclude Include="src\scenes\blmd\BLMDGlitch.h" />
+		<ClInclude Include="src\scenes\blmd\BLMDMenger.h" />
+		<ClInclude Include="src\scenes\blmd\BLMDMirror.h" />
+		<ClInclude Include="src\scenes\resourceManager.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiConstants.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiEvents.h" />
@@ -168,6 +180,7 @@
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiMatrix.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes\ofxDatGuiTheme.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src\ofxEasing.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSON.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSONElement.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json\json-forwards.h" />

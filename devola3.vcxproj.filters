@@ -7,6 +7,21 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
+		<ClCompile Include="src\scenes\blmd\BLMDBlank.cpp">
+			<Filter>src\scenes\blmd</Filter>
+		</ClCompile>
+		<ClCompile Include="src\scenes\blmd\BLMDDatamosh.cpp">
+			<Filter>src\scenes\blmd</Filter>
+		</ClCompile>
+		<ClCompile Include="src\scenes\blmd\BLMDGlitch.cpp">
+			<Filter>src\scenes\blmd</Filter>
+		</ClCompile>
+		<ClCompile Include="src\scenes\blmd\BLMDMenger.cpp">
+			<Filter>src\scenes\blmd</Filter>
+		</ClCompile>
+		<ClCompile Include="src\scenes\blmd\BLMDMirror.cpp">
+			<Filter>src\scenes\blmd</Filter>
+		</ClCompile>
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp">
 			<Filter>addons\ofxDatGui\src\core</Filter>
 		</ClCompile>
@@ -15,6 +30,9 @@
 		</ClCompile>
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp">
 			<Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src\easing_terms_of_use.html">
+			<Filter>addons\ofxEasing\src</Filter>
 		</ClCompile>
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSONElement.cpp">
 			<Filter>addons\ofxJSON\src</Filter>
@@ -126,82 +144,112 @@
 		<Filter Include="src">
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
+		<Filter Include="src\scenes">
+			<UniqueIdentifier>{7A1347D9--0DA-B-40-3A-B-6E9-B1EC1BBBA4B0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\scenes\blmd">
+			<UniqueIdentifier>{789CC57B--E6F-2-4F-AD-A-882-DF94C8D8CC2B}</UniqueIdentifier>
+		</Filter>
 		<Filter Include="addons">
-			<UniqueIdentifier>{88AFDE10--C55-3-4F-97-8-80C-DF2C68687394}</UniqueIdentifier>
+			<UniqueIdentifier>{14B87759--EEA-7-44-EE-9-E4F-0D1BBD1E9F02}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui">
-			<UniqueIdentifier>{1294AF77--2FA-6-42-C5-A-76D-0535CCE7E2FD}</UniqueIdentifier>
+			<UniqueIdentifier>{A28AF090--B15-A-4D-7E-9-0B1-253E7724657A}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src">
-			<UniqueIdentifier>{4C98ECF3--CCD-D-4B-D3-A-A9F-E2AA22422299}</UniqueIdentifier>
+			<UniqueIdentifier>{362A546B--CAD-C-4F-5E-9-DBC-C493D43BD241}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\core">
-			<UniqueIdentifier>{38DB77F4--48C-C-44-97-A-488-FE6B1B9B24B2}</UniqueIdentifier>
+			<UniqueIdentifier>{9AFAE18A--D21-5-47-26-9-64E-ACF46D3EF0F9}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\libs">
-			<UniqueIdentifier>{C67281F7--F32-0-49-EB-B-D49-AB5BBB094DB0}</UniqueIdentifier>
+			<UniqueIdentifier>{E013651F--628-F-44-9B-B-D19-EC3356BB24AC}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\libs\ofxSmartFont">
-			<UniqueIdentifier>{F939BE29--573-D-42-E1-9-F4E-6EFE4700EA47}</UniqueIdentifier>
+			<UniqueIdentifier>{4CA46EDB--956-1-44-11-9-810-3726E1E6F122}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\components">
-			<UniqueIdentifier>{0719952A--B68-F-43-DF-8-E80-9BCF09D4D988}</UniqueIdentifier>
+			<UniqueIdentifier>{8CCD9CF1--C5A-B-4E-33-A-7F9-0CF8EFD47F0B}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\themes">
-			<UniqueIdentifier>{D2337650--ADE-1-4B-9F-A-1B3-6A8F763D006D}</UniqueIdentifier>
+			<UniqueIdentifier>{C898251B--7D9-0-4D-F5-A-457-F0DDBEE42AB5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxEasing">
+			<UniqueIdentifier>{549B471C--E12-3-4B-F9-8-597-4E5D4776BFCA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxEasing\src">
+			<UniqueIdentifier>{74904B53--560-4-4B-A2-8-1CD-5661F3A5AFA9}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON">
-			<UniqueIdentifier>{915B7C0E--446-7-42-2A-A-633-2DFECEDE24F6}</UniqueIdentifier>
+			<UniqueIdentifier>{36D160BC--40F-7-4B-15-8-030-E6E9F193854B}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\src">
-			<UniqueIdentifier>{9B5B647F--C68-3-4F-C9-8-C59-B1C5AA74B2BD}</UniqueIdentifier>
+			<UniqueIdentifier>{CC9599FB--C67-9-4B-13-9-AC0-866447ACD1BB}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs">
-			<UniqueIdentifier>{735F4485--E5E-C-48-6E-9-888-67715268ED8A}</UniqueIdentifier>
+			<UniqueIdentifier>{5096C40D--80D-6-4C-91-B-79B-8945FBDA75DF}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs\jsoncpp">
-			<UniqueIdentifier>{3B7C0C37--AC9-9-4F-5E-8-3DF-6AA51342559D}</UniqueIdentifier>
+			<UniqueIdentifier>{0273B6E9--318-6-4D-73-8-64D-C8A9C02B96AD}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs\jsoncpp\include">
-			<UniqueIdentifier>{0B74C59B--03B-7-45-A0-9-B96-87B7E59747AD}</UniqueIdentifier>
+			<UniqueIdentifier>{779B5A2B--4B2-D-4B-69-B-3B0-30AD5AE86BD1}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs\jsoncpp\include\json">
-			<UniqueIdentifier>{CB871707--558-7-47-9B-A-70C-627104D7811F}</UniqueIdentifier>
+			<UniqueIdentifier>{EFF986F0--9AC-7-4B-14-8-CA6-F932FF384285}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs\jsoncpp\src">
-			<UniqueIdentifier>{E77E67B7--673-A-4B-15-9-E21-AB8D06B3C05B}</UniqueIdentifier>
+			<UniqueIdentifier>{DB4DFF76--661-C-4B-5B-A-21A-541E67D15036}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxNetwork">
-			<UniqueIdentifier>{4DFCFDA7--8A9-C-4F-C4-A-2F9-F0E987324353}</UniqueIdentifier>
+			<UniqueIdentifier>{80D2328E--F7A-C-44-3A-9-E1E-28DAC845080F}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxNetwork\src">
-			<UniqueIdentifier>{B0B13225--6C2-6-46-F0-8-8C8-83101E9E1B99}</UniqueIdentifier>
+			<UniqueIdentifier>{321EDDD7--30C-5-45-51-9-2E7-11897D098F3F}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxPostGlitch">
-			<UniqueIdentifier>{A6577D9F--FF0-C-47-72-A-55F-A62EFA4A1140}</UniqueIdentifier>
+			<UniqueIdentifier>{2AF22689--4E8-E-45-39-8-017-6C1DE67AFB59}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxPostGlitch\src">
-			<UniqueIdentifier>{13477BE8--189-6-4B-10-8-ACD-D49E4810092A}</UniqueIdentifier>
+			<UniqueIdentifier>{BDBDCD00--C27-A-40-0D-B-5FE-13F016A6E48B}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxPostGlitch\src\shaders">
-			<UniqueIdentifier>{84477B29--F75-8-48-30-8-AA8-CA11F4F94958}</UniqueIdentifier>
+			<UniqueIdentifier>{F2A2DB79--08D-A-4E-30-B-CC2-D8C3F32090ED}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxPostProcessing">
-			<UniqueIdentifier>{17C6741F--F4B-7-40-29-B-C05-1B4ADF87E480}</UniqueIdentifier>
+			<UniqueIdentifier>{F09A7C30--116-7-40-3F-9-2BB-55F336783832}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxPostProcessing\src">
-			<UniqueIdentifier>{69F4D507--4E7-3-48-B3-8-BFC-4BD1439C9C95}</UniqueIdentifier>
+			<UniqueIdentifier>{148FABFB--DF9-B-4B-88-A-611-79AD4FC44BF1}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxSceneManager">
-			<UniqueIdentifier>{0BD3435F--DEB-4-4E-11-8-FFE-CC4098522255}</UniqueIdentifier>
+			<UniqueIdentifier>{FEA563E1--819-4-46-CF-9-D69-BE83FECC2036}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxSceneManager\src">
-			<UniqueIdentifier>{0E0A2A30--4D8-C-4F-FA-8-420-2DF9FBCC2D5D}</UniqueIdentifier>
+			<UniqueIdentifier>{FF28E7A5--2E7-D-47-D5-A-23D-04B6465FD880}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\scenes\blmd\BLMDBlank.h">
+			<Filter>src\scenes\blmd</Filter>
+		</ClInclude>
+		<ClInclude Include="src\scenes\blmd\BLMDDatamosh.h">
+			<Filter>src\scenes\blmd</Filter>
+		</ClInclude>
+		<ClInclude Include="src\scenes\blmd\BLMDGlitch.h">
+			<Filter>src\scenes\blmd</Filter>
+		</ClInclude>
+		<ClInclude Include="src\scenes\blmd\BLMDMenger.h">
+			<Filter>src\scenes\blmd</Filter>
+		</ClInclude>
+		<ClInclude Include="src\scenes\blmd\BLMDMirror.h">
+			<Filter>src\scenes\blmd</Filter>
+		</ClInclude>
+		<ClInclude Include="src\scenes\resourceManager.h">
+			<Filter>src\scenes</Filter>
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h">
 			<Filter>addons\ofxDatGui\src\core</Filter>
@@ -265,6 +313,9 @@
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h">
 			<Filter>addons\ofxDatGui\src\themes</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src\ofxEasing.h">
+			<Filter>addons\ofxEasing\src</Filter>
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSON.h">
 			<Filter>addons\ofxJSON\src</Filter>

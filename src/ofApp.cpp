@@ -1,12 +1,16 @@
 #include "ofApp.h"
 #include "resourceManager.h"
+#include "BLMDBlank.h"
 #include "BLMDMirror.h"
 #include "BLMDGlitch.h"
+#include "BLMDMenger.h"
+#include "BLMDDatamosh.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetWindowTitle("devola3 by vonqo");
     ResourceManager::getInstance().load();
+    ofHideCursor(); // ofShowCursor();
     
     ofSoundStreamSettings soundSettings;
     vector<ofSoundDevice> soundDevices = ofSoundStreamListDevices();
@@ -20,14 +24,17 @@ void ofApp::setup(){
     }
     soundSettings.numInputChannels = 1;  // Mono input
     soundSettings.numOutputChannels = 0; // No output
-    soundSettings.bufferSize = 512;
+    soundSettings.bufferSize = 256;
     soundSettings.sampleRate = 44100;
     soundSettings.numBuffers = 4;
     soundSettings.setInListener(this);
     ofSoundStreamSetup(soundSettings);
     
+    sceneManager.addScene(std::make_shared<BLMDBlank>(soundInEv));
     sceneManager.addScene(std::make_shared<BLMDMirror>(soundInEv));
     sceneManager.addScene(std::make_shared<BLMDGlitch>(soundInEv));
+    sceneManager.addScene(std::make_shared<BLMDMenger>(soundInEv));
+    sceneManager.addScene(std::make_shared<BLMDDatamosh>(soundInEv));
     
     sceneManager.setExitByTime(false);
     sceneManager.setSceneDuration(0, 0);
@@ -38,9 +45,6 @@ void ofApp::setup(){
     gui->addTextInput("message", "# open frameworks #");
     gui->addFRM();
     gui->addBreak();
-    gui->addSlider("position X", 0, 120, 75);
-    gui->addSlider("position Y", -40, 240, 200);
-    gui->addSlider("position Z", -80, 120, -40);
 }
 
 //--------------------------------------------------------------
@@ -67,8 +71,11 @@ void ofApp::exit(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    if(key == 'a') sceneManager.changeScene(0);
-    if(key == 'b') sceneManager.changeScene(1);
+    if(key == '1') sceneManager.changeScene(1);
+    if(key == '2') sceneManager.changeScene(2);
+    if(key == '3') sceneManager.changeScene(3);
+    if(key == '4') sceneManager.changeScene(4);
+    if(key == '0') sceneManager.changeScene(0);
 }
 
 //--------------------------------------------------------------

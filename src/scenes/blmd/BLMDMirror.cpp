@@ -6,21 +6,25 @@
 //
 
 #include "BLMDMirror.h"
+#include "AudioUtility.h"
 
+//--------------------------------------------------------------
 void BLMDMirror::start(){
     ofDisableArbTex();
     ofEnableAntiAliasing();
     ofEnableAlphaBlending();
+    ofBackground(0,0,0);
     
     res = ResourceManager::getInstance();
-    ofBackground(255, 0, 0);
     mirrorShader = res.blmdMirror;
 }
 
+//--------------------------------------------------------------
 void BLMDMirror::update(){
     
 }
 
+//--------------------------------------------------------------
 void BLMDMirror::draw(){
     if(ofGetKeyPressed(OF_KEY_LEFT)){
         carpetBase++;
@@ -29,8 +33,8 @@ void BLMDMirror::draw(){
         if(carpetBase > 1) carpetBase--;
     }
     
-    float cx = energy * 1.5 + carpetBase;
-    float cy = energy + carpetBase;
+    float cx = (audioEnergy * 25) * 1.5 + carpetBase;
+    float cy = (audioEnergy * 25) + carpetBase;
     
     mirrorShader.begin();
     mirrorShader.setUniform2f("uResolution", ofGetWidth(), ofGetHeight());
@@ -45,6 +49,7 @@ void BLMDMirror::draw(){
     mirrorShader.end();
 }
 
+//--------------------------------------------------------------
 void BLMDMirror::keyPressed(int key){
     if(key == OF_KEY_UP) {
         carpetBase += 100;
@@ -57,11 +62,12 @@ void BLMDMirror::keyPressed(int key){
     }
 }
 
+//--------------------------------------------------------------
 void BLMDMirror::windowResized(int w, int h){
     
 }
 
+//--------------------------------------------------------------
 void BLMDMirror::onAudioInput(ofSoundBuffer & input){
-    float rms = input.getRMSAmplitude();
-    energy = ofMap(rms, 0, 1, 0, 25);
+    audioEnergy = AudioUtility::rms(input);
 }

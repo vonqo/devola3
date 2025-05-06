@@ -13,6 +13,9 @@
 class ResourceManager {
 
 public:
+    int camWidth;
+    int camHeight;
+    
     ofImage blmdLogo;
     ofImage carpet0;
     ofImage carpet1;
@@ -29,7 +32,10 @@ public:
         return instance;
     }
     
-    void load() {
+    void load(int cw, int ch) {
+        camWidth = cw;
+        camHeight = ch;
+        
         blmdLogo.load("images/blmd_logo.png");
         carpet0.load("images/carpet0.jpg");
         carpet1.load("images/carpet1.jpg");

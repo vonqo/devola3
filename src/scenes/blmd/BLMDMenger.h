@@ -6,7 +6,7 @@
 //
 #include "ofMain.h"
 #include "ofxScene.h"
-#include "resourceManager.h"
+#include "ResourceManager.h"
 
 class BLMDMenger : public ofxScene {
     
@@ -32,5 +32,6 @@ public:
     void windowResized(int w, int h) override;
     void onAudioInput(ofSoundBuffer & input);
     
+    float audioEnergy = 0;
     ofShader mengerShader;
 };

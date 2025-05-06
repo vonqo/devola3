@@ -6,7 +6,7 @@
 //
 #include "ofMain.h"
 #include "ofxScene.h"
-#include "resourceManager.h"
+#include "ResourceManager.h"
 
 class BLMDBlank : public ofxScene {
     

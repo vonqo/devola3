@@ -3,9 +3,10 @@
 #include "ofMain.h"
 #include "ofxSceneManager.h"
 #include "ofxDatGui.h"
+#include "ResourceManager.h"
 
 class ofApp : public ofBaseApp{
-
+    
 public:
     void setup() override;
     void update() override;
@@ -26,7 +27,36 @@ public:
     void gotMessage(ofMessage msg) override;
     void audioIn(ofSoundBuffer & input) override;
     
+    float padTop = 0;
+    float padBottom = 0;
+    float padLeft = 0;
+    float padRight = 0;
+    
+    ofFbo mainBuffer;
     ofxSceneManager sceneManager;
     ofEvent<ofSoundBuffer> soundInEv;
+    ofEvent<ofPixels> cameraInEv;
+    
+    int camWidth;
+    int camHeight;
+    ofVideoGrabber camGrabber;
+    ofPixels camData;
+    
     ofxDatGui* gui;
+    ofxDatGuiSlider* gridOffset;
+    ofxDatGuiSlider* gridSize;
+    ofxDatGuiColorPicker* gridColor;
+    ofxDatGuiTextInput* topPadding;
+    ofxDatGuiTextInput* leftPadding;
+    ofxDatGuiTextInput* rightPadding;
+    ofxDatGuiTextInput* bottomPadding;
+    ofxDatGuiValuePlotter* rms;
+    float rmsValue = 0;
+    
+    bool isConsoleActive = true;
+//    float gridSize = 1;
+//    int gridOffset = 25;
+    
+    void toggleConsole(bool isConsoleActive);
+    void drawGrid();
 };

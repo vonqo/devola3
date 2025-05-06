@@ -6,7 +6,7 @@
 //
 #include "ofMain.h"
 #include "ofxScene.h"
-#include "resourceManager.h"
+#include "ResourceManager.h"
 
 class BLMDMirror : public ofxScene {
     
@@ -43,7 +43,7 @@ public:
     void onAudioInput(ofSoundBuffer & input);
     
     bool nextCarpet = false;
-    float energy = 0;
+    float audioEnergy = 0;
     float carpetBase = 1;
     ofShader mirrorShader;
     

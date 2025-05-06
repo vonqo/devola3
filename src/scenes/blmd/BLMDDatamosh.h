@@ -6,23 +6,27 @@
 //
 #include "ofMain.h"
 #include "ofxScene.h"
-#include "resourceManager.h"
+#include "ResourceManager.h"
 
 class BLMDDatamosh : public ofxScene {
     
 private:
-    ofEvent<ofSoundBuffer> ev;
+    ofEvent<ofSoundBuffer> evSound;
+    ofEvent<ofPixels> evCamera;
     ResourceManager res;
 
 public:
     
-    BLMDDatamosh(ofEvent<ofSoundBuffer> & soundInEv) {
-        ev = soundInEv;
+    BLMDDatamosh(ofEvent<ofSoundBuffer> & soundInEv, ofEvent<ofPixels> & camereInEv) {
+        evSound = soundInEv;
+        evCamera = camereInEv;
         ofAddListener(soundInEv, this, &BLMDDatamosh::onAudioInput);
+        ofAddListener(camereInEv, this, &BLMDDatamosh::onCameraInput);
     }
     
     ~BLMDDatamosh(){
-        ofRemoveListener(ev, this, &BLMDDatamosh::onAudioInput);
+        ofRemoveListener(evSound, this, &BLMDDatamosh::onAudioInput);
+        ofRemoveListener(evCamera, this, &BLMDDatamosh::onAudioInput);
     }
     
     void start() override;
@@ -31,6 +35,12 @@ public:
     void keyPressed(int key) override;
     void windowResized(int w, int h) override;
     void onAudioInput(ofSoundBuffer & input);
+    void onCameraInput(ofPixels & input);
     
+    float audioEnergy = 0;
     ofShader datamoshShader;
+    ofFbo datamoshBuffer;
+    ofPixels cameraData;
+    ofTexture cameraTexture;
+    
 };

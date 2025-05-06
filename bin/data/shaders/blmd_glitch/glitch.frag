@@ -75,10 +75,10 @@ void main()
 	float time = mod(uTime, 32.0); // + modelmat[0].x + modelmat[0].z;
 
 	// float GLITCH = glitcher + uMouse.x / uResolution.x;
-	float GLITCH = glitcher;
+	float GLITCH = 0.5f;
 	
-    //float rdist = length( (uv - vec2(0.5,0.5))*vec2(aspect, 1.0) )/1.4;
-    //GLITCH *= rdist;
+    float rdist = length( (uv - vec2(0.5,0.5))*vec2(aspect, 1.0) )/1.4;
+    GLITCH *= rdist;
     
 	float gnm = sat( GLITCH );
 	float rnd0 = rand( mytrunc( vec2(time, time), 6.0 ) );

@@ -28,6 +28,6 @@ void BLMDBlank::windowResized(int w, int h){
     
 }
 
-void BLMDBlank::onAudioInput(ofSoundBuffer &input){
+void BLMDBlank::onAudioInput(ofSoundBuffer & input){
     
 }

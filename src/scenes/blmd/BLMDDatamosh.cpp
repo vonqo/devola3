@@ -5,27 +5,35 @@
 //  Created by Vonqo on 2025.05.04.
 //
 #include "BLMDDatamosh.h"
+#include "AudioUtility.h"
 
+//--------------------------------------------------------------
 void BLMDDatamosh::start(){
     ofDisableArbTex();
     ofEnableAntiAliasing();
     ofEnableAlphaBlending();
+    ofBackground(0,0,0);
     
     res = ResourceManager::getInstance();
-    ofBackground(0,10,255);
+    cameraTexture.allocate(res.camWidth, res.camHeight, GL_RGB);
+    
     datamoshShader = res.blmdDatamosh;
 }
 
+//--------------------------------------------------------------
 void BLMDDatamosh::update(){
     
 }
 
+//--------------------------------------------------------------
 void BLMDDatamosh::draw(){
+    datamoshBuffer.begin();
     datamoshShader.begin();
     datamoshShader.setUniform2f("uResolution", ofGetWidth(), ofGetHeight());
-    datamoshShader.setUniform1f("uTime", ofTime().getAsMilliseconds() * 0.001);
-    datamoshShader.setUniformTexture("textureCur", res.carpet2.getTexture(), 1);
-    datamoshShader.setUniformTexture("texturePre", res.carpet3.getTexture(), 2);
+    datamoshShader.setUniform1f("uTime", ofGetElapsedTimeMillis() * 0.001);
+    datamoshShader.setUniformTexture("textureCur", cameraTexture, 1);
+    datamoshShader.setUniformTexture("texturePre", cameraTexture, 2);
+    // datamoshShader.setUniformTexture("texturePre", datamoshBuffer.getTexture(), 2);
     datamoshShader.setUniform1f("minVel", 0.01);
     datamoshShader.setUniform1f("maxVel", 0.5);
     datamoshShader.setUniform1f("offsetInc", 0.1);
@@ -36,16 +44,28 @@ void BLMDDatamosh::draw(){
     datamoshShader.setUniform1f("threshold", 0.5);
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
     datamoshShader.end();
+    datamoshBuffer.end();
+    
+    datamoshBuffer.draw(0,0);
+    cameraTexture.draw(0,0);
 }
 
+//--------------------------------------------------------------
 void BLMDDatamosh::keyPressed(int key){
     
 }
 
+//--------------------------------------------------------------
 void BLMDDatamosh::windowResized(int w, int h){
     
 }
 
+//--------------------------------------------------------------
+void BLMDDatamosh::onCameraInput(ofPixels &input) {
+    cameraTexture.loadData(input);
+}
+
+//--------------------------------------------------------------
 void BLMDDatamosh::onAudioInput(ofSoundBuffer &input){
-    
+    audioEnergy = AudioUtility::rms(input);
 }

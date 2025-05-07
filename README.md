@@ -1,15 +1,15 @@
 # devola3
 
-devola3 is the third iteration of B.L.M.D and Even Tide's open source real-time audio visualization app for live performances. devola3 is implemented on openFrameworks and.
+devola3 is the third iteration of B.L.M.D and Even Tide's open source real-time audio visualization app for live performances. devola3 is implemented on openFrameworks
 
 *New features and improvements from devola2*
 
-* Native performance (2x Framerate, instant load time)
-* Improved visual fidelty
+* Native performance (2x Framerate, Instant scene switch)
+* Improved visual fidelity
 * Smooth networking options (udp, tcp, streaming)
-* MIDI and Trackpad support
+* Post processing + MIDI and Trackpad
 
-## openFrameworks dependency:
+## Dependency:
 
 * ofxDatGui
 * ofxSceneManager

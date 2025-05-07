@@ -10,7 +10,7 @@ int main() {
     
 	settings.setSize(1280, 720);
     settings.windowMode = OF_WINDOW; //can also be OF_FULLSCREEN
-
+    
 	auto window = ofCreateWindow(settings);
 
 	ofRunApp(window, make_shared<ofApp>());

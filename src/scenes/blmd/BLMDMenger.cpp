@@ -28,8 +28,8 @@ void BLMDMenger::draw(){
     mengerShader.begin();
     mengerShader.setUniform2f("uResolution", ofGetWidth(), ofGetHeight());
     mengerShader.setUniform1f("uTime", ofGetElapsedTimeMillis() * 0.001);
-    mengerShader.setUniformTexture("texture1", res.carpet2.getTexture(), 1);
-    mengerShader.setUniformTexture("texture2", res.carpet3.getTexture(), 2);
+    mengerShader.setUniformTexture("texture1", res.carpetMenger.getTexture(), 1);
+    mengerShader.setUniformTexture("texture2", res.carpet2.getTexture(), 2);
     mengerShader.setUniform1f("speed", 1);
     mengerShader.setUniform1f("iteration", 1);
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());

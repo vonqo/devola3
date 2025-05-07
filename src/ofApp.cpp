@@ -11,8 +11,15 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetWindowTitle("devola3 by vonqo");
-    ResourceManager::getInstance().load(640, 480);
+    
+    // --- LOAD RESOURCE AND SET CAMERA RESOLUTION -- //
+    int camW = 1280;
+    int camH = 720;
+    
+    ResourceManager::getInstance().load(camW, camH);
     mainBuffer.allocate(ofGetWidth(), ofGetHeight());
+    audioSpectogram.allocate(ofGetWidth(), ofGetHeight());
+    postGlitch.setup(&mainBuffer);
     
     // --- SOUND SETUP --- //
     ofSoundStreamSettings soundSettings;
@@ -27,11 +34,12 @@ void ofApp::setup(){
     }
     soundSettings.numInputChannels = 1;  // Mono input
     soundSettings.numOutputChannels = 0; // No output
-    soundSettings.bufferSize = 256;
+    soundSettings.bufferSize = 512;
     soundSettings.sampleRate = 44100;
     soundSettings.numBuffers = 4;
     soundSettings.setInListener(this);
     ofSoundStreamSetup(soundSettings);
+    fft = ofxFft::create(512, OF_FFT_WINDOW_HAMMING);
     
     // --- CAMERA SETUP --- //
     ResourceManager res = ResourceManager::getInstance();
@@ -57,6 +65,7 @@ void ofApp::setup(){
         camGrabber.setDesiredFrameRate(30);
         camGrabber.setup(camWidth, camHeight);
         camData.allocate(camWidth, camHeight, OF_PIXELS_RGB);
+        camTex.allocate(camWidth, camHeight, GL_RGB);
     }
     
     // --- SCENE MANAGER SETUP --- //
@@ -75,45 +84,58 @@ void ofApp::setup(){
     gui = new ofxDatGui(ofxDatGuiAnchor::TOP_RIGHT);
     gui->setTheme(new devolaGuiTheme());
     gui->addFRM();
-    gui->addBreak();
-    gui->addLabel("Grid");
-    gridOffset = gui->addSlider("Offset", 1, 250); gridOffset->setValue(50);
-    gridSize = gui->addSlider("Line size", 1, 20); gridSize->setValue(1);
-    gridColor = gui->addColorPicker("Line color", ofColor::white);
+    cameraToggle    = gui->addToggle("Show Camera"); cameraToggle->setChecked(isCameraShow);
+    audioToggle     = gui->addToggle("Show Audio");  audioToggle->setChecked(isAudioShow);
+    cameraToggle->onToggleEvent(this, &ofApp::onCameraToggle);
+    audioToggle->onToggleEvent(this, &ofApp::onAudioToggle);
     
     gui->addBreak();
-    gui->addLabel("Padding");
-    topPadding = gui->addTextInput("Top"); topPadding->setText("0");
-    leftPadding = gui->addTextInput("Left"); leftPadding->setText("0");
-    rightPadding = gui->addTextInput("Right"); rightPadding->setText("0");
-    bottomPadding =  gui->addTextInput("Bottom"); bottomPadding->setText("0");
+    gui->addLabel("--> Grid");
+    gridOffset  = gui->addSlider("Offset", 1, 250);     gridOffset->setValue(50);
+    gridSize    = gui->addSlider("Line size", 1, 20);   gridSize->setValue(1);
+    gridColor   = gui->addColorPicker("Line color", ofColor(244,191,57));
     
     gui->addBreak();
-    gui->addLabel("Audio");
-    rms = gui->addValuePlotter("RMS", 0, 100);
-    rms->setDrawMode(ofxDatGuiGraph::LINES);
-    rms->setSpeed(2);
-    rms->setRange(0, 100);
-    rms->setStripeColor(ofColor::fromHsb(120, 200, 255));
+    gui->addLabel("--> Padding");
+    topPadding    = gui->addTextInput("Top");    topPadding->setText("0");
+    leftPadding   = gui->addTextInput("Left");   leftPadding->setText("0");
+    rightPadding  = gui->addTextInput("Right");  rightPadding->setText("0");
+    bottomPadding = gui->addTextInput("Bottom"); bottomPadding->setText("0");
+    
+    gui->addBreak();
+    gui->addLabel("--> Audio");
+    
+    rms = gui->addSlider("RMS", 0, 1); rms->setValue(0);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     sceneManager.update();
     camGrabber.update();
+    
+    if(ofGetKeyPressed('q')){
+        if(curtainValue > 0) curtainValue -= 0.01;
+    }
+    if(ofGetKeyPressed('w')){
+        if(curtainValue < 1) curtainValue += 0.01;
+    }
+    
     if(camGrabber.isFrameNew()){
         ofPixels & pixels = camGrabber.getPixels();
         ofNotifyEvent(cameraInEv, pixels);
+        if(isCameraShow && isConsoleActive) {
+            camTex.loadData(pixels);
+        }
     }
     if(isConsoleActive) {
-        rms->setValue(0.2f);
+        rms->setValue(rmsValue);
     }
     
     try {
-        padTop = std::stof(topPadding->getText());
-        padBottom = std::stof(bottomPadding->getText());
-        padLeft = std::stof(leftPadding->getText());
-        padRight = std::stof(rightPadding->getText());
+        padTop      = std::stof(topPadding->getText());
+        padBottom   = std::stof(bottomPadding->getText());
+        padLeft     = std::stof(leftPadding->getText());
+        padRight    = std::stof(rightPadding->getText());
     } catch(const std::exception& e) {
         ofLogVerbose() << "Parse Error";
     }
@@ -123,22 +145,34 @@ void ofApp::update(){
 void ofApp::audioIn(ofSoundBuffer & input){
     ofNotifyEvent(soundInEv, input);
     if(isConsoleActive) {
-        float a = AudioUtility::rms(input);
+        rmsValue = AudioUtility::rms(input);
+        if(isAudioShow) {
+            
+        }
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    mainBuffer.begin();
-    sceneManager.draw();
-    mainBuffer.end();
+    if(isCameraShow && isConsoleActive) {
+        drawCamera();
+    } else if(isAudioShow && isConsoleActive) {
+        drawAudioAnalysis();
+    } else {
+        mainBuffer.begin();
+        sceneManager.draw();
+        mainBuffer.end();
+        
+        postGlitch.generateFx();
+        mainBuffer.draw(
+            padLeft,
+            padTop,
+            ofGetWidth()-padLeft-padRight,
+            ofGetHeight()-padTop-padBottom
+        );
+    }
     
-    mainBuffer.draw(
-                    padLeft,
-                    padTop,
-                    ofGetWidth()-padLeft-padRight,
-                    ofGetHeight()-padTop-padBottom
-                    );
+    drawCurtain();
     drawGrid();
 }
 
@@ -163,6 +197,28 @@ void ofApp::drawGrid(){
     }
     
     ofSetColor(ofColor::white);
+}
+
+//--------------------------------------------------------------
+void ofApp::drawCurtain(){
+    ofSetColor(0,0,0,curtainValue*255);
+    ofFill();
+    ofDrawRectangle(0,0,ofGetWidth(),ofGetHeight());
+    ofSetColor(ofColor::white);
+}
+
+//--------------------------------------------------------------
+void ofApp::drawCamera(){
+    camTex.draw(0,0);
+}
+
+//--------------------------------------------------------------
+void ofApp::drawAudioAnalysis(){
+    audioSpectogram.begin();
+    ofBackground(0,0,0);
+    
+    audioSpectogram.end();
+    audioSpectogram.draw(0,0);
 }
 
 //--------------------------------------------------------------
@@ -199,6 +255,28 @@ void ofApp::toggleConsole(bool isConsoleActive) {
         ofHideCursor();
         gui->setVisible(false);
     }
+}
+
+//--------------------------------------------------------------
+void ofApp::onCameraToggle(ofxDatGuiToggleEvent ev){
+    isCameraShow = ev.checked;
+}
+
+//--------------------------------------------------------------
+void ofApp::onAudioToggle(ofxDatGuiToggleEvent ev){
+    isAudioShow = ev.checked;
+}
+
+//--------------------------------------------------------------
+void ofApp::newMidiMessage(ofxMidiMessage &input) {
+    // TODO: midi implementation
+    
+    postGlitch.setFx(OFXPOSTGLITCH_CONVERGENCE, false);
+    postGlitch.setFx(OFXPOSTGLITCH_NOISE,       false);
+    postGlitch.setFx(OFXPOSTGLITCH_SWELL,       false);
+    postGlitch.setFx(OFXPOSTGLITCH_SHAKER,      false);
+    postGlitch.setFx(OFXPOSTGLITCH_TWIST,       false);
+    postGlitch.setFx(OFXPOSTGLITCH_GLOW,        false);
 }
 
 //--------------------------------------------------------------

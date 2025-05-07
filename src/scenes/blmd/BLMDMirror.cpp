@@ -21,18 +21,16 @@ void BLMDMirror::start(){
 
 //--------------------------------------------------------------
 void BLMDMirror::update(){
-    
-}
-
-//--------------------------------------------------------------
-void BLMDMirror::draw(){
     if(ofGetKeyPressed(OF_KEY_LEFT)){
         carpetBase++;
     }
     if(ofGetKeyPressed(OF_KEY_RIGHT)){
         if(carpetBase > 1) carpetBase--;
     }
-    
+}
+
+//--------------------------------------------------------------
+void BLMDMirror::draw(){
     float cx = (audioEnergy * 25) * 1.5 + carpetBase;
     float cy = (audioEnergy * 25) + carpetBase;
     

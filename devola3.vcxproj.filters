@@ -7,6 +7,9 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
+		<ClCompile Include="src\audio\AudioUtility.cpp">
+			<Filter>src\audio</Filter>
+		</ClCompile>
 		<ClCompile Include="src\scenes\blmd\BLMDBlank.cpp">
 			<Filter>src\scenes\blmd</Filter>
 		</ClCompile>
@@ -34,11 +37,62 @@
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src\easing_terms_of_use.html">
 			<Filter>addons\ofxEasing\src</Filter>
 		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFft.cpp">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxEasyFft.cpp">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFftw.cpp">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFftBasic.cpp">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxProcessFFT.cpp">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\kiss_fft.c">
+			<Filter>addons\ofxFft\libs\kiss</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\kiss_fftr.c">
+			<Filter>addons\ofxFft\libs\kiss</Filter>
+		</ClCompile>
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSONElement.cpp">
 			<Filter>addons\ofxJSON\src</Filter>
 		</ClCompile>
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src\jsoncpp.cpp">
 			<Filter>addons\ofxJSON\libs\jsoncpp\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiTimecode.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxBaseMidi.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiOut.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop\ofxRtMidiIn.cpp">
+			<Filter>addons\ofxMidi\src\desktop</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop\ofxRtMidiOut.cpp">
+			<Filter>addons\ofxMidi\src\desktop</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiClock.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiMessage.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidi.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiIn.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\rtmidi\RtMidi.cpp">
+			<Filter>addons\ofxMidi\libs\rtmidi</Filter>
 		</ClCompile>
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPManager.cpp">
 			<Filter>addons\ofxNetwork\src</Filter>
@@ -58,81 +112,6 @@
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.cpp">
 			<Filter>addons\ofxPostGlitch\src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\BleachBypassPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\DofPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\EdgePass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\BloomPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RGBShiftPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ZoomBlurPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\PixelatePass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\HsbShiftPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ConvolutionPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\VerticalTiltShifPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\PostProcessing.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RenderPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\DofAltPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\FakeSSSPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\GodRaysPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\LUTPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\HorizontalTiltShifPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\SSAOPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RimHighlightingPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\KaleidoscopePass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ToonPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\LimbDarkeningPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\NoiseWarpPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ContrastPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\FxaaPass.cpp">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClCompile>
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.cpp">
 			<Filter>addons\ofxSceneManager\src</Filter>
 		</ClCompile>
@@ -144,94 +123,130 @@
 		<Filter Include="src">
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
+		<Filter Include="src\audio">
+			<UniqueIdentifier>{D401A91B--383-A-41-2E-8-934-480D8EE4EC97}</UniqueIdentifier>
+		</Filter>
 		<Filter Include="src\scenes">
-			<UniqueIdentifier>{7A1347D9--0DA-B-40-3A-B-6E9-B1EC1BBBA4B0}</UniqueIdentifier>
+			<UniqueIdentifier>{6C4DF795--1C9-B-44-0A-B-9D7-975C5EB62577}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\scenes\blmd">
-			<UniqueIdentifier>{789CC57B--E6F-2-4F-AD-A-882-DF94C8D8CC2B}</UniqueIdentifier>
+			<UniqueIdentifier>{CDD0C8C0--93F-C-45-B1-8-3D8-FE46BBC5964A}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons">
-			<UniqueIdentifier>{14B87759--EEA-7-44-EE-9-E4F-0D1BBD1E9F02}</UniqueIdentifier>
+			<UniqueIdentifier>{D7B7F68C--ADB-6-4C-90-9-3C4-9DBF7797F34D}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui">
-			<UniqueIdentifier>{A28AF090--B15-A-4D-7E-9-0B1-253E7724657A}</UniqueIdentifier>
+			<UniqueIdentifier>{C795536A--50D-9-46-D6-A-FE6-AE03A5F268B1}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src">
-			<UniqueIdentifier>{362A546B--CAD-C-4F-5E-9-DBC-C493D43BD241}</UniqueIdentifier>
+			<UniqueIdentifier>{E1C80710--A98-5-42-E2-B-DAA-703965401462}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\core">
-			<UniqueIdentifier>{9AFAE18A--D21-5-47-26-9-64E-ACF46D3EF0F9}</UniqueIdentifier>
+			<UniqueIdentifier>{1D586323--923-1-4D-72-8-64D-8579F3BE29EC}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\libs">
-			<UniqueIdentifier>{E013651F--628-F-44-9B-B-D19-EC3356BB24AC}</UniqueIdentifier>
+			<UniqueIdentifier>{BEBBF3AA--BF8-2-4A-90-8-7B6-DE8EF9788262}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\libs\ofxSmartFont">
-			<UniqueIdentifier>{4CA46EDB--956-1-44-11-9-810-3726E1E6F122}</UniqueIdentifier>
+			<UniqueIdentifier>{32B08280--622-A-4F-A3-9-E18-D19772A86FE2}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\components">
-			<UniqueIdentifier>{8CCD9CF1--C5A-B-4E-33-A-7F9-0CF8EFD47F0B}</UniqueIdentifier>
+			<UniqueIdentifier>{3F7C5EAF--244-5-43-A8-B-107-37D102D791AC}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxDatGui\src\themes">
-			<UniqueIdentifier>{C898251B--7D9-0-4D-F5-A-457-F0DDBEE42AB5}</UniqueIdentifier>
+			<UniqueIdentifier>{B2EFF66F--E18-E-47-C3-A-67E-D5F0767C5431}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxEasing">
-			<UniqueIdentifier>{549B471C--E12-3-4B-F9-8-597-4E5D4776BFCA}</UniqueIdentifier>
+			<UniqueIdentifier>{2C31EE22--560-5-4F-03-B-D80-B78F1685B6AF}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxEasing\src">
-			<UniqueIdentifier>{74904B53--560-4-4B-A2-8-1CD-5661F3A5AFA9}</UniqueIdentifier>
+			<UniqueIdentifier>{8F1C662B--996-9-4F-B8-A-D13-603DEE20A2AC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFft">
+			<UniqueIdentifier>{CB5FB4DA--B1D-7-43-4D-A-8D9-893BCA49DCFA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFft\src">
+			<UniqueIdentifier>{4AA8ECFC--E5A-E-4B-4A-A-222-0CBFE5AC0AEC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFft\libs">
+			<UniqueIdentifier>{B402828F--B0A-1-40-69-A-DA8-EE6DA8215585}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFft\libs\kiss">
+			<UniqueIdentifier>{F908EAA5--CEF-A-4A-84-9-280-9DF33FDAFFE4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFft\libs\fftw">
+			<UniqueIdentifier>{B12B3F31--C0D-6-40-57-8-A59-3B89819ADED8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFft\libs\fftw\include">
+			<UniqueIdentifier>{9CBED266--427-9-48-AB-8-617-8CBF67754CE2}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON">
-			<UniqueIdentifier>{36D160BC--40F-7-4B-15-8-030-E6E9F193854B}</UniqueIdentifier>
+			<UniqueIdentifier>{2E7E8B8E--99B-F-41-3B-8-FB7-16DA9F3F3D05}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\src">
-			<UniqueIdentifier>{CC9599FB--C67-9-4B-13-9-AC0-866447ACD1BB}</UniqueIdentifier>
+			<UniqueIdentifier>{31CDE41F--CF6-C-48-20-B-181-6E94E91D7C95}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs">
-			<UniqueIdentifier>{5096C40D--80D-6-4C-91-B-79B-8945FBDA75DF}</UniqueIdentifier>
+			<UniqueIdentifier>{4A0761E5--F90-3-41-B0-A-138-C658A61F65DB}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs\jsoncpp">
-			<UniqueIdentifier>{0273B6E9--318-6-4D-73-8-64D-C8A9C02B96AD}</UniqueIdentifier>
+			<UniqueIdentifier>{A31D5377--6BA-2-4C-75-B-CB0-13CB312AB00D}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs\jsoncpp\include">
-			<UniqueIdentifier>{779B5A2B--4B2-D-4B-69-B-3B0-30AD5AE86BD1}</UniqueIdentifier>
+			<UniqueIdentifier>{5804B847--CE0-D-4F-F1-B-963-46D36E89AA05}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs\jsoncpp\include\json">
-			<UniqueIdentifier>{EFF986F0--9AC-7-4B-14-8-CA6-F932FF384285}</UniqueIdentifier>
+			<UniqueIdentifier>{38F88F53--4A3-7-47-F7-B-F8A-679E60284764}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxJSON\libs\jsoncpp\src">
-			<UniqueIdentifier>{DB4DFF76--661-C-4B-5B-A-21A-541E67D15036}</UniqueIdentifier>
+			<UniqueIdentifier>{3A1A5C34--B9E-D-48-20-B-1E5-BAF0AA3C18AC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi">
+			<UniqueIdentifier>{60A9FAA8--041-1-46-B6-A-504-C8A9674D6E9A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi\src">
+			<UniqueIdentifier>{083EEAFB--FF2-8-4A-AB-B-06C-0EAFC03BECC6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi\src\desktop">
+			<UniqueIdentifier>{D299388B--8D2-3-40-A8-9-771-2B8A9AEB1E09}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi\libs">
+			<UniqueIdentifier>{79147295--B8A-9-4D-9A-8-D59-F5E36AFBF10C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi\libs\rtmidi">
+			<UniqueIdentifier>{F64D2543--5B4-9-4E-C3-8-5A8-A4661D8BDD64}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxNetwork">
-			<UniqueIdentifier>{80D2328E--F7A-C-44-3A-9-E1E-28DAC845080F}</UniqueIdentifier>
+			<UniqueIdentifier>{E2BC9142--ABA-A-45-EA-A-406-8E551A35E39D}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxNetwork\src">
-			<UniqueIdentifier>{321EDDD7--30C-5-45-51-9-2E7-11897D098F3F}</UniqueIdentifier>
+			<UniqueIdentifier>{C6C4C509--658-F-4F-9E-B-354-7B7F92DEAADC}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxPostGlitch">
-			<UniqueIdentifier>{2AF22689--4E8-E-45-39-8-017-6C1DE67AFB59}</UniqueIdentifier>
+			<UniqueIdentifier>{CD21C1FE--AD9-C-44-70-B-FBD-877AC23D710A}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxPostGlitch\src">
-			<UniqueIdentifier>{BDBDCD00--C27-A-40-0D-B-5FE-13F016A6E48B}</UniqueIdentifier>
+			<UniqueIdentifier>{98012064--923-9-4A-6C-B-2EE-D925C1BB529D}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxPostGlitch\src\shaders">
-			<UniqueIdentifier>{F2A2DB79--08D-A-4E-30-B-CC2-D8C3F32090ED}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxPostProcessing">
-			<UniqueIdentifier>{F09A7C30--116-7-40-3F-9-2BB-55F336783832}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxPostProcessing\src">
-			<UniqueIdentifier>{148FABFB--DF9-B-4B-88-A-611-79AD4FC44BF1}</UniqueIdentifier>
+			<UniqueIdentifier>{8EFF39C2--8D2-3-4F-12-9-B77-649EBAF59BB0}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxSceneManager">
-			<UniqueIdentifier>{FEA563E1--819-4-46-CF-9-D69-BE83FECC2036}</UniqueIdentifier>
+			<UniqueIdentifier>{790B6BAA--905-5-4D-73-B-39A-18A33429C9C1}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxSceneManager\src">
-			<UniqueIdentifier>{FF28E7A5--2E7-D-47-D5-A-23D-04B6465FD880}</UniqueIdentifier>
+			<UniqueIdentifier>{DFB424D6--5F8-D-4C-34-B-9B8-7ED98F655172}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\audio\AudioUtility.h">
+			<Filter>src\audio</Filter>
+		</ClInclude>
+		<ClInclude Include="src\scenes\ResourceManager.h">
+			<Filter>src\scenes</Filter>
 		</ClInclude>
 		<ClInclude Include="src\scenes\blmd\BLMDBlank.h">
 			<Filter>src\scenes\blmd</Filter>
@@ -248,7 +263,7 @@
 		<ClInclude Include="src\scenes\blmd\BLMDMirror.h">
 			<Filter>src\scenes\blmd</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\resourceManager.h">
+		<ClInclude Include="src\scenes\devolaGuiTheme.h">
 			<Filter>src\scenes</Filter>
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h">
@@ -317,6 +332,33 @@
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src\ofxEasing.h">
 			<Filter>addons\ofxEasing\src</Filter>
 		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFftw.h">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFftBasic.h">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxEasyFft.h">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFft.h">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxProcessFFT.h">
+			<Filter>addons\ofxFft\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\_kiss_fft_guts.h">
+			<Filter>addons\ofxFft\libs\kiss</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\kiss_fft.h">
+			<Filter>addons\ofxFft\libs\kiss</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\kiss_fftr.h">
+			<Filter>addons\ofxFft\libs\kiss</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\include\fftw3.h">
+			<Filter>addons\ofxFft\libs\fftw\include</Filter>
+		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSON.h">
 			<Filter>addons\ofxJSON\src</Filter>
 		</ClInclude>
@@ -328,6 +370,42 @@
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json\json.h">
 			<Filter>addons\ofxJSON\libs\jsoncpp\include\json</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiIn.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiConstants.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiClock.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiOut.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop\ofxRtMidiOut.h">
+			<Filter>addons\ofxMidi\src\desktop</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop\ofxRtMidiIn.h">
+			<Filter>addons\ofxMidi\src\desktop</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiTimecode.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiMessage.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiTypes.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidi.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxBaseMidi.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\rtmidi\RtMidi.h">
+			<Filter>addons\ofxMidi\libs\rtmidi</Filter>
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPManager.h">
 			<Filter>addons\ofxNetwork\src</Filter>
@@ -409,84 +487,6 @@
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Slitscan.h">
 			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\LUTPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RimHighlightingPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RenderPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ContrastPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\FxaaPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\LimbDarkeningPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ofxPostProcessing.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\VerticalTiltShifPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ConvolutionPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\BleachBypassPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\FakeSSSPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\HorizontalTiltShifPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\SSAOPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\DofPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ToonPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\HsbShiftPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\PixelatePass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\ZoomBlurPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\BloomPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\RGBShiftPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\KaleidoscopePass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\DofAltPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\GodRaysPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\NoiseWarpPass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\PostProcessing.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostProcessing\src\EdgePass.h">
-			<Filter>addons\ofxPostProcessing\src</Filter>
 		</ClInclude>
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.h">
 			<Filter>addons\ofxSceneManager\src</Filter>

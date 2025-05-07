@@ -43,4 +43,6 @@ public:
     ofPixels cameraData;
     ofTexture cameraTexture;
     
+    ofFbo prev;
+    ofFbo curr;
 };

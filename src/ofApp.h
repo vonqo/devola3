@@ -3,9 +3,12 @@
 #include "ofMain.h"
 #include "ofxSceneManager.h"
 #include "ofxDatGui.h"
+#include "ofxPostGlitch.h"
+#include "ofxMidi.h"
+#include "ofxFft.h"
 #include "ResourceManager.h"
 
-class ofApp : public ofBaseApp{
+class ofApp : public ofBaseApp, public ofxMidiListener{
     
 public:
     void setup() override;
@@ -26,6 +29,7 @@ public:
     void dragEvent(ofDragInfo dragInfo) override;
     void gotMessage(ofMessage msg) override;
     void audioIn(ofSoundBuffer & input) override;
+    void newMidiMessage(ofxMidiMessage & input) override;
     
     float padTop = 0;
     float padBottom = 0;
@@ -33,6 +37,7 @@ public:
     float padRight = 0;
     
     ofFbo mainBuffer;
+    ofxPostGlitch postGlitch;
     ofxSceneManager sceneManager;
     ofEvent<ofSoundBuffer> soundInEv;
     ofEvent<ofPixels> cameraInEv;
@@ -41,8 +46,14 @@ public:
     int camHeight;
     ofVideoGrabber camGrabber;
     ofPixels camData;
+    ofTexture camTex;
     
     ofxDatGui* gui;
+    ofxDatGuiToggle* cameraToggle;
+    ofxDatGuiToggle* audioToggle;
+    void onCameraToggle(ofxDatGuiToggleEvent ev);
+    void onAudioToggle(ofxDatGuiToggleEvent ev);
+    
     ofxDatGuiSlider* gridOffset;
     ofxDatGuiSlider* gridSize;
     ofxDatGuiColorPicker* gridColor;
@@ -50,13 +61,20 @@ public:
     ofxDatGuiTextInput* leftPadding;
     ofxDatGuiTextInput* rightPadding;
     ofxDatGuiTextInput* bottomPadding;
-    ofxDatGuiValuePlotter* rms;
+    ofxDatGuiSlider* rms;
     float rmsValue = 0;
     
+    float curtainValue = 0;
     bool isConsoleActive = true;
-//    float gridSize = 1;
-//    int gridOffset = 25;
+    bool isCameraShow = false;
+    bool isAudioShow = false;
+    
+    ofxFft* fft;
+    ofFbo audioSpectogram;
     
     void toggleConsole(bool isConsoleActive);
     void drawGrid();
+    void drawCurtain();
+    void drawCamera();
+    void drawAudioAnalysis();
 };

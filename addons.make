@@ -1,7 +1,8 @@
 ofxDatGui
 ofxEasing
+ofxFft
 ofxJSON
+ofxMidi
 ofxNetwork
 ofxPostGlitch
-ofxPostProcessing
 ofxSceneManager

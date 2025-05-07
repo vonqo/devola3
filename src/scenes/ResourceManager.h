@@ -21,6 +21,8 @@ public:
     ofImage carpet1;
     ofImage carpet2;
     ofImage carpet3;
+    ofImage carpetMenger;
+    ofImage carpetTear;
     
     ofShader blmdMirror;
     ofShader blmdGlitch;
@@ -41,6 +43,8 @@ public:
         carpet1.load("images/carpet1.jpg");
         carpet2.load("images/carpet2.png");
         carpet3.load("images/carpet3.jpg");
+        carpetMenger.load("images/menger.png");
+        carpetTear.load("images/tear_rug_white.png");
         
         blmdMirror.load("shaders/blmd_mirror/mirror.vert", "shaders/blmd_mirror/mirror.frag");
         blmdGlitch.load("shaders/blmd_glitch/glitch.vert", "shaders/blmd_glitch/glitch.frag");

@@ -35,12 +35,12 @@ void BLMDMirror::draw(){
     float cy = (audioEnergy * 25) + carpetBase;
     
     mirrorShader.begin();
-    mirrorShader.setUniform2f("uResolution", ofGetWidth(), ofGetHeight());
-    mirrorShader.setUniform2f("uScale", cx, cy);
+    mirrorShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
+    mirrorShader.setUniform2f("scale", cx, cy);
     if(nextCarpet) {
-        mirrorShader.setUniformTexture("uTexture", res.carpet1.getTexture(), 1);
+        mirrorShader.setUniformTexture("texture1", res.carpet1.getTexture(), 1);
     } else {
-        mirrorShader.setUniformTexture("uTexture", res.carpet2.getTexture(), 1);
+        mirrorShader.setUniformTexture("texture1", res.carpet2.getTexture(), 1);
     }
     
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());

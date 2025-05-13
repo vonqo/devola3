@@ -4,7 +4,7 @@
 precision mediump float;
 #endif
 
-uniform vec2 uResolution;
+uniform vec2 resolution;
 uniform float uTime;
 uniform sampler2D texture1;
 uniform float glitcher;
@@ -68,8 +68,8 @@ vec2 mytrunc( vec2 x, float num_levels )
 
 void main()
 {
-  	float aspect = uResolution.x / uResolution.y;
-	vec2 uv = gl_FragCoord.xy / uResolution.xy;
+  	float aspect = resolution.x / resolution.y;
+	vec2 uv = gl_FragCoord.xy / resolution.xy;
 	uv.y = 1.0 - uv.y;
 	
 	float time = mod(uTime, 32.0); // + modelmat[0].x + modelmat[0].z;

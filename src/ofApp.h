@@ -6,7 +6,9 @@
 #include "ofxPostGlitch.h"
 #include "ofxMidi.h"
 #include "ofxFft.h"
+#include "ofxBlur.h"
 #include "ResourceManager.h"
+#include "ofxOrnament.h"
 
 class ofApp : public ofBaseApp, public ofxMidiListener{
     
@@ -31,6 +33,9 @@ public:
     void audioIn(ofSoundBuffer & input) override;
     void newMidiMessage(ofxMidiMessage & input) override;
     
+    const int camW = 1280;
+    const int camH = 720;
+    
     float padTop = 0;
     float padBottom = 0;
     float padLeft = 0;
@@ -41,6 +46,8 @@ public:
     ofxSceneManager sceneManager;
     ofEvent<ofSoundBuffer> soundInEv;
     ofEvent<ofPixels> cameraInEv;
+    ofSoundStreamSettings soundSettings;
+    ofxMidiIn midiIn;
     
     int camWidth;
     int camHeight;
@@ -50,30 +57,44 @@ public:
     
     ofxDatGui* gui;
     ofxDatGuiToggle* cameraToggle;
-    ofxDatGuiToggle* audioToggle;
+    ofxDatGuiToggle* overlayToggle;
     void onCameraToggle(ofxDatGuiToggleEvent ev);
-    void onAudioToggle(ofxDatGuiToggleEvent ev);
+    void onOverlayToggle(ofxDatGuiToggleEvent ev);
     
+    ofxDatGuiFolder* gridFolder;
     ofxDatGuiSlider* gridOffset;
     ofxDatGuiSlider* gridSize;
     ofxDatGuiColorPicker* gridColor;
+    
+    ofxDatGuiFolder* paddingFolder;
     ofxDatGuiTextInput* topPadding;
     ofxDatGuiTextInput* leftPadding;
     ofxDatGuiTextInput* rightPadding;
     ofxDatGuiTextInput* bottomPadding;
-    ofxDatGuiSlider* rms;
+    ofxDatGuiSlider* rmsSlider;
+    
+    vector<string> audioInputOptions;
+    vector<string> midiInputOptions;
+    vector<string> cameraInputOptions;
+    ofxDatGuiDropdown* inputMidiList;
+    ofxDatGuiDropdown* inputCameraList;
+    ofxDatGuiDropdown* inputAudioList;
+    void onInputMidiSelect(ofxDatGuiDropdownEvent ev);
+    void onInputCameraSelect(ofxDatGuiDropdownEvent ev);
+    void onInputAudioSelect(ofxDatGuiDropdownEvent ev);
+    
     float rmsValue = 0;
+    vector<float> graphValues;
+    void pushGraphValue(float value);
     
     float curtainValue = 0;
     bool isConsoleActive = true;
     bool isCameraShow = false;
-    bool isAudioShow = false;
-    
-    ofxFft* fft;
-    ofFbo audioSpectogram;
+    bool isOverlayShow = false;
     
     void toggleConsole(bool isConsoleActive);
     void drawGrid();
+    void drawOverlay();
     void drawCurtain();
     void drawCamera();
     void drawAudioAnalysis();

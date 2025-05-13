@@ -26,7 +26,7 @@ public:
     
     ~BLMDDatamosh(){
         ofRemoveListener(evSound, this, &BLMDDatamosh::onAudioInput);
-        ofRemoveListener(evCamera, this, &BLMDDatamosh::onAudioInput);
+        ofRemoveListener(evCamera, this, &BLMDDatamosh::onCameraInput);
     }
     
     void start() override;

@@ -27,7 +27,7 @@ void BLMDGlitch::update(){
 //--------------------------------------------------------------
 void BLMDGlitch::draw(){
     glitchShader.begin();
-    glitchShader.setUniform2f("uResolution", ofGetWidth(), ofGetHeight());
+    glitchShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
     glitchShader.setUniform1f("uTime", ofGetElapsedTimeMillis() * 0.001);
     glitchShader.setUniform1f("glitcher", audioEnergy);
     glitchShader.setUniform1i("samplerNum", 5);

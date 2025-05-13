@@ -1,8 +1,10 @@
+ofxBlur
 ofxDatGui
 ofxEasing
 ofxFft
 ofxJSON
 ofxMidi
 ofxNetwork
+ofxOrnament
 ofxPostGlitch
 ofxSceneManager

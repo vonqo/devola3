@@ -7,24 +7,22 @@
 #include "BLMDGlitch.h"
 #include "BLMDMenger.h"
 #include "BLMDDatamosh.h"
+#include "BLMDOrnament.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetWindowTitle("devola3 by vonqo");
+    ofDisableArbTex();
     
     // --- LOAD RESOURCE AND SET CAMERA RESOLUTION -- //
-    int camW = 1280;
-    int camH = 720;
-    
     ResourceManager::getInstance().load(camW, camH);
     mainBuffer.allocate(ofGetWidth(), ofGetHeight());
-    audioSpectogram.allocate(ofGetWidth(), ofGetHeight());
     postGlitch.setup(&mainBuffer);
     
     // --- SOUND SETUP --- //
-    ofSoundStreamSettings soundSettings;
     vector<ofSoundDevice> soundDevices = ofSoundStreamListDevices();
     for(ofSoundDevice dv : soundDevices) {
+        audioInputOptions.push_back(dv.name);
         if(dv.isDefaultInput) {
             soundSettings.setInDevice(dv);
         }
@@ -32,14 +30,20 @@ void ofApp::setup(){
             soundSettings.setOutDevice(dv);
         }
     }
-    soundSettings.numInputChannels = 1;  // Mono input
-    soundSettings.numOutputChannels = 0; // No output
+    soundSettings.numInputChannels = 1;   // Mono input
+    soundSettings.numOutputChannels = 0;  // No output
     soundSettings.bufferSize = 512;
     soundSettings.sampleRate = 44100;
     soundSettings.numBuffers = 4;
     soundSettings.setInListener(this);
     ofSoundStreamSetup(soundSettings);
-    fft = ofxFft::create(512, OF_FFT_WINDOW_HAMMING);
+    
+    // --- MIDI SETUP --- //
+    for(string midiPort : midiIn.getInPortList()) {
+        midiInputOptions.push_back(midiPort);
+    }
+    midiIn.addListener(this);
+    midiIn.setVerbose(false);
     
     // --- CAMERA SETUP --- //
     ResourceManager res = ResourceManager::getInstance();
@@ -49,14 +53,12 @@ void ofApp::setup(){
     int deviceid = -1;
     vector<ofVideoDevice> devices = camGrabber.listDevices();
     
-    for(size_t i = 0; i < devices.size(); i++){
-        if(devices[i].bAvailable){
-            //log the device
-            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName;
-            deviceid = devices[i].id;
-            break;
-        } else {
-            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName << " - unavailable ";
+    for(ofVideoDevice dv : devices) {
+        if(dv.bAvailable) {
+            cameraInputOptions.push_back(dv.deviceName);
+            if(deviceid == -1) {
+                deviceid = dv.id;
+            }
         }
     }
     
@@ -74,6 +76,7 @@ void ofApp::setup(){
     sceneManager.addScene(std::make_shared<BLMDGlitch>(soundInEv));
     sceneManager.addScene(std::make_shared<BLMDMenger>(soundInEv));
     sceneManager.addScene(std::make_shared<BLMDDatamosh>(soundInEv, cameraInEv));
+    sceneManager.addScene(std::make_shared<BLMDOrnament>(soundInEv, cameraInEv));
     
     sceneManager.setExitByTime(false);
     sceneManager.setSceneDuration(0, 0);
@@ -84,28 +87,42 @@ void ofApp::setup(){
     gui = new ofxDatGui(ofxDatGuiAnchor::TOP_RIGHT);
     gui->setTheme(new devolaGuiTheme());
     gui->addFRM();
-    cameraToggle    = gui->addToggle("Show Camera"); cameraToggle->setChecked(isCameraShow);
-    audioToggle     = gui->addToggle("Show Audio");  audioToggle->setChecked(isAudioShow);
+    overlayToggle   = gui->addToggle("Show Overlay"); overlayToggle->setChecked(isOverlayShow);
+    cameraToggle    = gui->addToggle("Show Camera");  cameraToggle->setChecked(isCameraShow);
     cameraToggle->onToggleEvent(this, &ofApp::onCameraToggle);
-    audioToggle->onToggleEvent(this, &ofApp::onAudioToggle);
+    overlayToggle->onToggleEvent(this, &ofApp::onOverlayToggle);
+    
+    gridFolder  = gui->addFolder("#==> Grid");
+    gridOffset  = gridFolder->addSlider("Offset", 1, 250);     gridOffset->setValue(50);
+    gridSize    = gridFolder->addSlider("Line size", 1, 20);   gridSize->setValue(1);
+    gridColor   = gridFolder->addColorPicker("Line color", ofColor(244,191,57));
+    
+    paddingFolder = gui->addFolder("#==> Padding");
+    topPadding    = paddingFolder->addTextInput("Top", "0");
+    leftPadding   = paddingFolder->addTextInput("Left", "0");
+    rightPadding  = paddingFolder->addTextInput("Right", "0");
+    bottomPadding = paddingFolder->addTextInput("Bottom", "0");
     
     gui->addBreak();
-    gui->addLabel("--> Grid");
-    gridOffset  = gui->addSlider("Offset", 1, 250);     gridOffset->setValue(50);
-    gridSize    = gui->addSlider("Line size", 1, 20);   gridSize->setValue(1);
-    gridColor   = gui->addColorPicker("Line color", ofColor(244,191,57));
+    gui->addLabel("#==> Audio Input:");
+    inputAudioList = gui->addDropdown("- audio -", audioInputOptions);
+    inputAudioList->onDropdownEvent(this, &ofApp::onInputAudioSelect);
     
     gui->addBreak();
-    gui->addLabel("--> Padding");
-    topPadding    = gui->addTextInput("Top");    topPadding->setText("0");
-    leftPadding   = gui->addTextInput("Left");   leftPadding->setText("0");
-    rightPadding  = gui->addTextInput("Right");  rightPadding->setText("0");
-    bottomPadding = gui->addTextInput("Bottom"); bottomPadding->setText("0");
+    gui->addLabel("#==> Midi Input:");
+    inputMidiList = gui->addDropdown("- midi -", midiInputOptions);
+    inputMidiList->onDropdownEvent(this, &ofApp::onInputMidiSelect);
     
     gui->addBreak();
-    gui->addLabel("--> Audio");
+    gui->addLabel("#==> Camera Input:");
+    inputCameraList = gui->addDropdown("- camera -", cameraInputOptions);
+    inputCameraList->onDropdownEvent(this, &ofApp::onInputCameraSelect);
     
-    rms = gui->addSlider("RMS", 0, 1); rms->setValue(0);
+    gui->addBreak();
+    rmsSlider = gui->addSlider("rms", 0, 1); rmsSlider->setValue(0);
+    ofxDatGuiLog::quiet();
+    
+    graphValues.assign(700, 0.0);
 }
 
 //--------------------------------------------------------------
@@ -127,8 +144,9 @@ void ofApp::update(){
             camTex.loadData(pixels);
         }
     }
-    if(isConsoleActive) {
-        rms->setValue(rmsValue);
+    if(isConsoleActive){
+        rmsSlider->setValue(rmsValue);
+        pushGraphValue(rmsValue);
     }
     
     try {
@@ -146,9 +164,6 @@ void ofApp::audioIn(ofSoundBuffer & input){
     ofNotifyEvent(soundInEv, input);
     if(isConsoleActive) {
         rmsValue = AudioUtility::rms(input);
-        if(isAudioShow) {
-            
-        }
     }
 }
 
@@ -156,8 +171,6 @@ void ofApp::audioIn(ofSoundBuffer & input){
 void ofApp::draw(){
     if(isCameraShow && isConsoleActive) {
         drawCamera();
-    } else if(isAudioShow && isConsoleActive) {
-        drawAudioAnalysis();
     } else {
         mainBuffer.begin();
         sceneManager.draw();
@@ -172,6 +185,7 @@ void ofApp::draw(){
         );
     }
     
+    drawOverlay();
     drawCurtain();
     drawGrid();
 }
@@ -196,7 +210,26 @@ void ofApp::drawGrid(){
         ofDrawRectangle(0,y,ww,lineWidth);
     }
     
+    float dx = (float)ww/(float)graphValues.size();
+    float gh = (float)hh * 0.2f;
+    float topPad = hh-gh;
+    
+    ofBeginShape();
+    ofVertex(0, hh);
+    for(int p = 0; p < graphValues.size(); p++){
+        float value = graphValues[p];
+        ofVertex(p * dx, topPad+(gh-value*gh));
+    }
+    ofVertex(ww, hh);
+    ofEndShape();
+    
     ofSetColor(ofColor::white);
+}
+
+//--------------------------------------------------------------
+void ofApp::pushGraphValue(float value){
+    graphValues.push_back(value);
+    graphValues.erase(graphValues.begin());
 }
 
 //--------------------------------------------------------------
@@ -208,22 +241,21 @@ void ofApp::drawCurtain(){
 }
 
 //--------------------------------------------------------------
+void ofApp::drawOverlay(){
+    if(!isOverlayShow) return;
+    ResourceManager::getInstance().blmdLogo.draw(100, 100, 200, 100);
+}
+
+//--------------------------------------------------------------
 void ofApp::drawCamera(){
     camTex.draw(0,0);
 }
 
 //--------------------------------------------------------------
-void ofApp::drawAudioAnalysis(){
-    audioSpectogram.begin();
-    ofBackground(0,0,0);
-    
-    audioSpectogram.end();
-    audioSpectogram.draw(0,0);
-}
-
-//--------------------------------------------------------------
 void ofApp::exit(){
     ofSoundStreamStop();
+    midiIn.closePort();
+    midiIn.removeListener(this);
 }
 
 //--------------------------------------------------------------
@@ -242,6 +274,7 @@ void ofApp::keyPressed(int key){
         if(key == '2') sceneManager.changeScene(2);
         if(key == '3') sceneManager.changeScene(3);
         if(key == '4') sceneManager.changeScene(4);
+        if(key == '5') sceneManager.changeScene(5);
         if(key == '0') sceneManager.changeScene(0);
     }
 }
@@ -263,13 +296,16 @@ void ofApp::onCameraToggle(ofxDatGuiToggleEvent ev){
 }
 
 //--------------------------------------------------------------
-void ofApp::onAudioToggle(ofxDatGuiToggleEvent ev){
-    isAudioShow = ev.checked;
+void ofApp::onOverlayToggle(ofxDatGuiToggleEvent ev){
+    isOverlayShow = ev.checked;
 }
 
 //--------------------------------------------------------------
 void ofApp::newMidiMessage(ofxMidiMessage &input) {
     // TODO: midi implementation
+    
+    ofLogWarning() << input.toString();
+    ofLogWarning() << input.pitch << " " << input.velocity << " " << input.status;
     
     postGlitch.setFx(OFXPOSTGLITCH_CONVERGENCE, false);
     postGlitch.setFx(OFXPOSTGLITCH_NOISE,       false);
@@ -277,6 +313,49 @@ void ofApp::newMidiMessage(ofxMidiMessage &input) {
     postGlitch.setFx(OFXPOSTGLITCH_SHAKER,      false);
     postGlitch.setFx(OFXPOSTGLITCH_TWIST,       false);
     postGlitch.setFx(OFXPOSTGLITCH_GLOW,        false);
+}
+
+//--------------------------------------------------------------
+void ofApp::onInputMidiSelect(ofxDatGuiDropdownEvent ev){
+    string choice = midiInputOptions[ev.child];
+    midiIn.closePort();
+    midiIn.openPort(choice);
+}
+
+//--------------------------------------------------------------
+void ofApp::onInputCameraSelect(ofxDatGuiDropdownEvent ev){
+    string choice = cameraInputOptions[ev.child];
+    vector<ofVideoDevice> cameraDevices = camGrabber.listDevices();
+    
+    int deviceid = -1;
+    for(ofVideoDevice dv : cameraDevices) {
+        if(dv.bAvailable && dv.deviceName == choice) {
+            deviceid = dv.id;
+        }
+    }
+    
+    if(deviceid != -1) {
+        camGrabber.close();
+        camGrabber.setDeviceID(deviceid);
+    }
+}
+
+//--------------------------------------------------------------
+void ofApp::onInputAudioSelect(ofxDatGuiDropdownEvent ev){
+    string choice = audioInputOptions[ev.child];
+    
+    vector<ofSoundDevice> soundDevices = ofSoundStreamListDevices();
+    for(ofSoundDevice dv : soundDevices) {
+        if(dv.name == choice) {
+            soundSettings.setInDevice(dv);
+            break;
+        }
+    }
+}
+
+//--------------------------------------------------------------
+void ofApp::windowResized(int w, int h){
+    mainBuffer.allocate(w, h);
 }
 
 //--------------------------------------------------------------
@@ -317,11 +396,6 @@ void ofApp::mouseEntered(int x, int y){
 //--------------------------------------------------------------
 void ofApp::mouseExited(int x, int y){
 
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-    mainBuffer.allocate(w, h);
 }
 
 //--------------------------------------------------------------

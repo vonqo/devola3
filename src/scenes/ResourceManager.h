@@ -23,11 +23,15 @@ public:
     ofImage carpet3;
     ofImage carpetMenger;
     ofImage carpetTear;
+    ofImage textureNoise1;
+    ofImage textureTest1;
+    ofImage textureUVMap;
     
     ofShader blmdMirror;
     ofShader blmdGlitch;
     ofShader blmdMenger;
     ofShader blmdDatamosh;
+    ofShader intensityScope;
     
     static ResourceManager& getInstance() {
         static ResourceManager instance;
@@ -46,10 +50,15 @@ public:
         carpetMenger.load("images/menger.png");
         carpetTear.load("images/tear_rug_white.png");
         
+        textureNoise1.load("images/texture_noise1.png");
+        textureTest1.load("images/texture_test1.png");
+        textureUVMap.load("images/texture_uv_map.jpg");
+        
         blmdMirror.load("shaders/blmd_mirror/mirror.vert", "shaders/blmd_mirror/mirror.frag");
         blmdGlitch.load("shaders/blmd_glitch/glitch.vert", "shaders/blmd_glitch/glitch.frag");
         blmdMenger.load("shaders/blmd_menger/menger.vert", "shaders/blmd_menger/menger.frag");
         blmdDatamosh.load("shaders/blmd_datamosh/datamosh.vert", "shaders/blmd_datamosh/datamosh.frag");
+        intensityScope.load("shaders/vid_int_scp/intensity_scope.vert", "shaders/vid_int_scp/intensity_scope.frag");
     }
 };
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -270,6 +270,10 @@
 		"FB19C4E1-2965-4C72-8BAA-0D492D208934" /* ofxScene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxScene.h; path = /Users/vonqo/of_v0.12.0_osx_release/addons/ofxSceneManager/src/ofxScene.h; sourceTree = SOURCE_ROOT; };
 		"FD4D0ED1-5473-4C69-B2BF-F15B221D192C" /* ofxEasyFft.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxEasyFft.cpp; path = /Users/vonqo/of_v0.12.0_osx_release/addons/ofxFft/src/ofxEasyFft.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		08F99D662DD4462B000F7389 /* data */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = data; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
@@ -575,6 +579,7 @@
 		"780E948D-79CE-402C-8B7D-41B41BBEC3EC" /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				08F99D662DD4462B000F7389 /* data */,
 				"0DE47B15-5BE5-4979-84D2-B3053B9B74CD" /* ResourceManager.h */,
 				"30943394-9BB1-4F6B-9338-6779DC36BB4D" /* blmd */,
 				"783976FC-2D5D-48A9-ADA7-4100836A5DF0" /* devolaGuiTheme.h */,
@@ -846,6 +851,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				08F99D662DD4462B000F7389 /* data */,
 			);
 			name = devola3;
 			productName = myOFApp;

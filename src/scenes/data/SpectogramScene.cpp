@@ -1,39 +1,41 @@
 //
-//  BLMDBlank.cpp
+//  SpectogramScene.cpp
 //  devola3
 //
-//  Created by Vonqo on 2025.05.04.
+//  Created by Vonqo on 2025.05.14.
 //
-#include "BLMDBlank.h"
+#include "SpectogramScene.h"
 
 //--------------------------------------------------------------
-void BLMDBlank::start(){
+void SpectogramScene::start(){
     ofBackground(0,0,0);
     ofEnableAntiAliasing();
     res = ResourceManager::getInstance();
 }
 
 //--------------------------------------------------------------
-void BLMDBlank::update(){
+void SpectogramScene::update(){
     
 }
 
 //--------------------------------------------------------------
-void BLMDBlank::draw(){
-    res.carpet0.draw(0, 0, ofGetWidth(), ofGetHeight());
+void SpectogramScene::draw(){
+    ofBackground(0);
 }
 
 //--------------------------------------------------------------
-void BLMDBlank::keyPressed(int key){
+void SpectogramScene::keyPressed(int key){
     
 }
 
 //--------------------------------------------------------------
-void BLMDBlank::windowResized(int w, int h){
+void SpectogramScene::windowResized(int w, int h){
     
 }
 
 //--------------------------------------------------------------
-void BLMDBlank::onAudioInput(ofSoundBuffer & input){
+void SpectogramScene::onAudioInput(ofSoundBuffer & buffer){
     if(!isDrawing()) return;
+    ofLogNotice() << "Spectogram";
 }
+

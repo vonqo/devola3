@@ -8,14 +8,14 @@
 #include "BLMDMenger.h"
 #include "BLMDDatamosh.h"
 #include "BLMDOrnament.h"
+#include "SpectogramScene.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetWindowTitle("devola3 by vonqo");
-    ofDisableArbTex();
     
     // --- LOAD RESOURCE AND SET CAMERA RESOLUTION -- //
-    ResourceManager::getInstance().load(camW, camH);
+    ResourceManager::getInstance().load(camWidth, camHeight);
     mainBuffer.allocate(ofGetWidth(), ofGetHeight());
     postGlitch.setup(&mainBuffer);
     
@@ -46,29 +46,17 @@ void ofApp::setup(){
     midiIn.setVerbose(false);
     
     // --- CAMERA SETUP --- //
-    ResourceManager res = ResourceManager::getInstance();
-    camWidth = res.camWidth;
-    camHeight = res.camHeight;
-    
     int deviceid = -1;
     vector<ofVideoDevice> devices = camGrabber.listDevices();
     
     for(ofVideoDevice dv : devices) {
         if(dv.bAvailable) {
             cameraInputOptions.push_back(dv.deviceName);
-            if(deviceid == -1) {
-                deviceid = dv.id;
-            }
         }
     }
     
-    if(deviceid != -1) {
-        camGrabber.setDeviceID(deviceid);
-        camGrabber.setDesiredFrameRate(30);
-        camGrabber.setup(camWidth, camHeight);
-        camData.allocate(camWidth, camHeight, OF_PIXELS_RGB);
-        camTex.allocate(camWidth, camHeight, GL_RGB);
-    }
+    camData.allocate(camWidth, camHeight, OF_PIXELS_RGB);
+    camTex.allocate(camWidth, camHeight, GL_RGB);
     
     // --- SCENE MANAGER SETUP --- //
     sceneManager.addScene(std::make_shared<BLMDBlank>(soundInEv));
@@ -77,6 +65,7 @@ void ofApp::setup(){
     sceneManager.addScene(std::make_shared<BLMDMenger>(soundInEv));
     sceneManager.addScene(std::make_shared<BLMDDatamosh>(soundInEv, cameraInEv));
     sceneManager.addScene(std::make_shared<BLMDOrnament>(soundInEv, cameraInEv));
+    sceneManager.addScene(std::make_shared<SpectogramScene>(soundInEv));
     
     sceneManager.setExitByTime(false);
     sceneManager.setSceneDuration(0, 0);
@@ -261,7 +250,7 @@ void ofApp::exit(){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     
-    // toggle console
+    // toggle console '/'
     if(key == 47) {
         isConsoleActive = !isConsoleActive;
         toggleConsole(isConsoleActive);
@@ -275,6 +264,8 @@ void ofApp::keyPressed(int key){
         if(key == '3') sceneManager.changeScene(3);
         if(key == '4') sceneManager.changeScene(4);
         if(key == '5') sceneManager.changeScene(5);
+        
+        if(key == '9') sceneManager.changeScene(6);
         if(key == '0') sceneManager.changeScene(0);
     }
 }
@@ -302,17 +293,72 @@ void ofApp::onOverlayToggle(ofxDatGuiToggleEvent ev){
 
 //--------------------------------------------------------------
 void ofApp::newMidiMessage(ofxMidiMessage &input) {
-    // TODO: midi implementation
     
-    ofLogWarning() << input.toString();
-    ofLogWarning() << input.pitch << " " << input.velocity << " " << input.status;
+    ofLogNotice() << input.toString();
+    ofLogNotice() << input.pitch << " " << input.velocity << " " << input.status;
     
-    postGlitch.setFx(OFXPOSTGLITCH_CONVERGENCE, false);
-    postGlitch.setFx(OFXPOSTGLITCH_NOISE,       false);
-    postGlitch.setFx(OFXPOSTGLITCH_SWELL,       false);
-    postGlitch.setFx(OFXPOSTGLITCH_SHAKER,      false);
-    postGlitch.setFx(OFXPOSTGLITCH_TWIST,       false);
-    postGlitch.setFx(OFXPOSTGLITCH_GLOW,        false);
+    // pitch 40 - PAD 5
+    // pitch 38 - PAD 6
+    // pitch 46 - PAD 7
+    // pitch 37 - PAD 1
+    // pitch 36 - PAD 2
+    // ptich 42 - PAD 3
+    
+    // pitch 54 - black 1
+    // ptich 56 - black 2
+    // pitch 58 - black 3
+    // pitch 61 - black 4
+    // pitch 63 - black 5
+    
+    // ------ PADS
+    if(input.pitch == 40) {
+        postGlitch.setFx(OFXPOSTGLITCH_CR_REDRAISE,input.status == 144 ? 1:0);
+    } else
+    if(input.pitch == 38) {
+        postGlitch.setFx(OFXPOSTGLITCH_CR_GREENRAISE,input.status == 144 ? 1:0);
+    } else
+    if(input.pitch == 46) {
+        postGlitch.setFx(OFXPOSTGLITCH_CR_BLUERAISE,input.status == 144 ? 1:0);
+    } else
+    if(input.pitch == 37) {
+        postGlitch.setFx(OFXPOSTGLITCH_CR_REDINVERT,input.status == 144 ? 1:0);
+    } else
+    if(input.pitch == 36) {
+        postGlitch.setFx(OFXPOSTGLITCH_CR_GREENINVERT,input.status == 144 ? 1:0);
+    } else
+    if(input.pitch == 42) {
+        postGlitch.setFx(OFXPOSTGLITCH_CR_BLUEINVERT,input.status == 144 ? 1:0);
+    } else
+        
+    if(input.pitch == 44) {
+        postGlitch.setFx(OFXPOSTGLITCH_CR_HIGHCONTRAST,input.status == 144 ? 1:0);
+    } else
+    if(input.pitch == 82) {
+        postGlitch.setFx(OFXPOSTGLITCH_OUTLINE,input.status == 144 ? 1:0);
+    } else
+    
+    // ------ KEYS
+    {
+        float vel = ofMap(input.velocity, 0, 127, 0, 1);
+        
+        if(input.pitch == 54) {
+            postGlitch.setFx(OFXPOSTGLITCH_GLOW,input.status == 144 ? vel : 0);
+        } else
+        if(input.pitch == 56) {
+            postGlitch.setFx(OFXPOSTGLITCH_NOISE,input.status == 144 ? vel : 0);
+        } else
+        if(input.pitch == 58) {
+            postGlitch.setFx(OFXPOSTGLITCH_CONVERGENCE,input.status == 144 ? vel : 0);
+        } else
+        if(input.pitch == 61) {
+            postGlitch.setFx(OFXPOSTGLITCH_SWELL,input.status == 144 ? vel : 0);
+            // postGlitch.setFx(OFXPOSTGLITCH_SHAKER,input.status == 144 ? vel : 0);
+        } else
+        if(input.pitch == 63) {
+            postGlitch.setFx(OFXPOSTGLITCH_TWIST,input.status == 144 ? vel : 0);
+        }
+        
+    }
 }
 
 //--------------------------------------------------------------
@@ -324,6 +370,8 @@ void ofApp::onInputMidiSelect(ofxDatGuiDropdownEvent ev){
 
 //--------------------------------------------------------------
 void ofApp::onInputCameraSelect(ofxDatGuiDropdownEvent ev){
+    if(camGrabber.isInitialized()) return;
+    
     string choice = cameraInputOptions[ev.child];
     vector<ofVideoDevice> cameraDevices = camGrabber.listDevices();
     
@@ -335,8 +383,9 @@ void ofApp::onInputCameraSelect(ofxDatGuiDropdownEvent ev){
     }
     
     if(deviceid != -1) {
-        camGrabber.close();
         camGrabber.setDeviceID(deviceid);
+        camGrabber.setDesiredFrameRate(30);
+        camGrabber.setup(camWidth, camHeight);
     }
 }
 
@@ -348,6 +397,7 @@ void ofApp::onInputAudioSelect(ofxDatGuiDropdownEvent ev){
     for(ofSoundDevice dv : soundDevices) {
         if(dv.name == choice) {
             soundSettings.setInDevice(dv);
+            ofSoundStreamSetup(soundSettings);
             break;
         }
     }

@@ -33,9 +33,6 @@ public:
     void audioIn(ofSoundBuffer & input) override;
     void newMidiMessage(ofxMidiMessage & input) override;
     
-    const int camW = 1280;
-    const int camH = 720;
-    
     float padTop = 0;
     float padBottom = 0;
     float padLeft = 0;
@@ -49,8 +46,8 @@ public:
     ofSoundStreamSettings soundSettings;
     ofxMidiIn midiIn;
     
-    int camWidth;
-    int camHeight;
+    const int camWidth = 1280;
+    const int camHeight = 720;
     ofVideoGrabber camGrabber;
     ofPixels camData;
     ofTexture camTex;

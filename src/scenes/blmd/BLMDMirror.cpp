@@ -67,5 +67,6 @@ void BLMDMirror::windowResized(int w, int h){
 
 //--------------------------------------------------------------
 void BLMDMirror::onAudioInput(ofSoundBuffer & input){
+    if(!isDrawing()) return;
     audioEnergy = AudioUtility::rms(input);
 }

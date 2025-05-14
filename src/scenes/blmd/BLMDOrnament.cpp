@@ -63,12 +63,14 @@ void BLMDOrnament::windowResized(int w, int h){
 
 //--------------------------------------------------------------
 void BLMDOrnament::onCameraInput(ofPixels &input) {
+    if(!isDrawing()) return;
     cameraTexture.loadData(input);
     // ornament.update();
 }
 
 //--------------------------------------------------------------
 void BLMDOrnament::onAudioInput(ofSoundBuffer &input){
+    if(!isDrawing()) return;
     audioEnergy = AudioUtility::rms(input);
 }
 

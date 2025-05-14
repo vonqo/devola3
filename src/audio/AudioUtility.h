@@ -10,6 +10,6 @@ class AudioUtility {
 
 public:
     static float rms(ofSoundBuffer & input);
-    static float fft(ofSoundBuffer & input);
+    static float level(ofSoundBuffer & input);
     
 };

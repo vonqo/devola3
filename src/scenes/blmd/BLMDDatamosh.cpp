@@ -72,10 +72,12 @@ void BLMDDatamosh::windowResized(int w, int h){
 
 //--------------------------------------------------------------
 void BLMDDatamosh::onCameraInput(ofPixels &input) {
+    if(!isDrawing()) return;
     cameraTexture.loadData(input);
 }
 
 //--------------------------------------------------------------
 void BLMDDatamosh::onAudioInput(ofSoundBuffer &input){
+    if(!isDrawing()) return;
     audioEnergy = AudioUtility::rms(input);
 }

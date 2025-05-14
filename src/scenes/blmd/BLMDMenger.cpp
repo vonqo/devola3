@@ -47,5 +47,6 @@ void BLMDMenger::windowResized(int w, int h){
 
 //--------------------------------------------------------------
 void BLMDMenger::onAudioInput(ofSoundBuffer &input){
+    if(!isDrawing()) return;
     audioEnergy = AudioUtility::rms(input);
 }

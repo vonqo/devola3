@@ -13,9 +13,10 @@ devola3 is the third iteration of B.L.M.D and Even Tide's open source real-time 
 
 * ofxDatGui
 * ofxSceneManager
-* ofxPostGlitch
+* ofxPostGlitch [my branch](https://github.com/vonqo/ofxPostGlitch)
 * ofxNetwork
 * ofxMidi
+* ofxFft
 
 ## Credits
 

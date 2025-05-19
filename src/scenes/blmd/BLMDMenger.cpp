@@ -27,17 +27,21 @@ void BLMDMenger::draw(){
     mengerShader.begin();
     mengerShader.setUniform2f("uResolution", ofGetWidth(), ofGetHeight());
     mengerShader.setUniform1f("uTime", ofGetElapsedTimeMillis() * 0.001);
+    
     mengerShader.setUniformTexture("texture1", res.carpet3.getTexture(), 1);
     mengerShader.setUniformTexture("texture2", res.carpet2.getTexture(), 2);
-    mengerShader.setUniform1f("speed", 1);
-    mengerShader.setUniform1f("iteration", 1);
+    
+    mengerShader.setUniform1f("speed", ofMap(audioEnergy,0,1, 0.05, 0.5));
+    mengerShader.setUniform1f("iteration", ofMap(audioEnergy,0,1, 4, 8));
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
     mengerShader.end();
 }
 
 //--------------------------------------------------------------
 void BLMDMenger::keyPressed(int key){
-    
+    if(key == 'a' || key == 'A') set = 1;
+    if(key == 's' || key == 'S') set = 2;
+    if(key == 'd' || key == 'D') set = 3;
 }
 
 //--------------------------------------------------------------

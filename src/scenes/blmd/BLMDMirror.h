@@ -42,7 +42,7 @@ public:
 //    void gotMessage(ofMessage msg) override;
     void onAudioInput(ofSoundBuffer & input);
     
-    bool nextCarpet = false;
+    int set = 1;
     float audioEnergy = 0;
     float carpetBase = 1;
     ofShader mirrorShader;

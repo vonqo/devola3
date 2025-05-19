@@ -32,6 +32,7 @@ public:
     void windowResized(int w, int h) override;
     void onAudioInput(ofSoundBuffer & input);
     
+    int set = 1;
     float audioEnergy = 0;
     ofShader glitchShader;
     

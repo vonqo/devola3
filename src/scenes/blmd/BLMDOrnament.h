@@ -39,10 +39,10 @@ public:
     void onAudioInput(ofSoundBuffer & input);
     void onCameraInput(ofPixels & input);
     void newMidiMessage(ofxMidiMessage & input) override;
-
+    
     ofShader videoIntensity;
     ofTexture cameraTexture;
-    Ornament ornament;
+    ofFbo buffer;
     
     float audioEnergy = 0;
 };

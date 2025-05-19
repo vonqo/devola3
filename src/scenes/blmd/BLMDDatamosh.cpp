@@ -54,10 +54,11 @@ void BLMDDatamosh::draw(){
     datamoshShader.end();
     datamoshBuffer.end();
     
-//    ofEnableBlendMode(OF_BLENDMODE_MULTIPLY);
     datamoshBuffer.draw(0,0);
+    
+    ofEnableBlendMode(OF_BLENDMODE_MULTIPLY);
     res.carpetTear.draw(0,0,ofGetWidth(),ofGetHeight());
-//    ofDisableBlendMode();
+    ofDisableBlendMode();
 }
 
 //--------------------------------------------------------------

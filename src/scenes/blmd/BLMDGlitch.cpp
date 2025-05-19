@@ -12,7 +12,6 @@
 void BLMDGlitch::start(){
     ofDisableArbTex();
     ofEnableAntiAliasing();
-    // ofEnableAlphaBlending();
     ofBackground(0,0,0);
     
     res = ResourceManager::getInstance();
@@ -29,12 +28,11 @@ void BLMDGlitch::draw(){
     glitchShader.begin();
     glitchShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
     glitchShader.setUniform1f("uTime", ofGetElapsedTimeMillis() * 0.001);
-    glitchShader.setUniform1f("glitcher", audioEnergy);
-    glitchShader.setUniform1i("samplerNum", 5);
+    glitchShader.setUniform1f("glitcher", ofMap(audioEnergy,0,1,0.05,2.5));
+    glitchShader.setUniform1i("samplerNum", 8);
     glitchShader.setUniformTexture("texture1", res.carpet3.getTexture(), 1);
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
     glitchShader.end();
-    // res.carpet2.draw(0,0,ofGetWidth(),ofGetHeight());
 }
 
 //--------------------------------------------------------------
@@ -44,6 +42,9 @@ void BLMDGlitch::keyPressed(int key){
     } else if(key == OF_KEY_RIGHT) {
         
     }
+    if(key == 'a' || key == 'A') set = 1;
+    if(key == 's' || key == 'S') set = 2;
+    if(key == 'd' || key == 'D') set = 3;
 }
 
 //--------------------------------------------------------------

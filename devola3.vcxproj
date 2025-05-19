@@ -61,7 +61,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src\audio;src;src\scenes;src\scenes\blmd;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\lib;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\pgmidi;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\rtmidi;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ios;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src\audio;src;src\scenes;src\scenes\blmd;src\scenes\data;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxBlur\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\lib;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\pgmidi;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\rtmidi;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ios;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<MultiProcessorCompilation>true</MultiProcessorCompilation>
 			<ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
@@ -84,7 +84,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src\audio;src;src\scenes;src\scenes\blmd;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\lib;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\pgmidi;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\rtmidi;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ios;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src\audio;src;src\scenes;src\scenes\blmd;src\scenes\data;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxBlur\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\lib;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\pgmidi;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\rtmidi;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ios;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders;\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
 			<LanguageStandard>stdcpp17</LanguageStandard>
@@ -107,11 +107,15 @@
 		<ClCompile Include="src\main.cpp" />
 		<ClCompile Include="src\ofApp.cpp" />
 		<ClCompile Include="src\audio\AudioUtility.cpp" />
+		<ClCompile Include="src\audio\FFTEnergyAnalyzer.cpp" />
 		<ClCompile Include="src\scenes\blmd\BLMDBlank.cpp" />
 		<ClCompile Include="src\scenes\blmd\BLMDDatamosh.cpp" />
 		<ClCompile Include="src\scenes\blmd\BLMDGlitch.cpp" />
 		<ClCompile Include="src\scenes\blmd\BLMDMenger.cpp" />
 		<ClCompile Include="src\scenes\blmd\BLMDMirror.cpp" />
+		<ClCompile Include="src\scenes\blmd\BLMDOrnament.cpp" />
+		<ClCompile Include="src\scenes\data\SpectogramScene.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxBlur\src\ofxBlur.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\ofxDatGui.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp" />
@@ -140,6 +144,26 @@
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPManager.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPClient.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetworkUtils.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PM.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_CMM.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4M.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PMG.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_CM.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P3M1.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PGG.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PG.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P1.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P3.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P2.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PMM.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P6M.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P6.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P31M.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4G.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\Ornament.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\Tile.cpp" />
+		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\TileFactory.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.cpp" />
 		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.cpp" />
@@ -147,13 +171,17 @@
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h" />
 		<ClInclude Include="src\audio\AudioUtility.h" />
+		<ClInclude Include="src\audio\FFTEnergyAnalyzer.h" />
 		<ClInclude Include="src\scenes\ResourceManager.h" />
 		<ClInclude Include="src\scenes\blmd\BLMDBlank.h" />
 		<ClInclude Include="src\scenes\blmd\BLMDDatamosh.h" />
 		<ClInclude Include="src\scenes\blmd\BLMDGlitch.h" />
 		<ClInclude Include="src\scenes\blmd\BLMDMenger.h" />
 		<ClInclude Include="src\scenes\blmd\BLMDMirror.h" />
+		<ClInclude Include="src\scenes\blmd\BLMDOrnament.h" />
+		<ClInclude Include="src\scenes\data\SpectogramScene.h" />
 		<ClInclude Include="src\scenes\devolaGuiTheme.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxBlur\src\ofxBlur.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiConstants.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiEvents.h" />
@@ -209,6 +237,28 @@
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPSettings.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPManager.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPServer.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\OrnamentTypes.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\TileFactory.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PGG.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P31M.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P3.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4G.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4M.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PG.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PM.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PMM.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PMG.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_CM.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_CMM.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P1.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P3M1.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P6M.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P6.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P2.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\Tile.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\ofxOrnament.h" />
+		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\Ornament.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Twist.h" />
 		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Invert.h" />

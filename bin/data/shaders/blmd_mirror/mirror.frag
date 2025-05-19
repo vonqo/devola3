@@ -14,10 +14,10 @@ out vec4 outputColor;
 void main() {
     vec2 uv = gl_FragCoord.xy / resolution.xy;
     uv.y = 1.0 - uv.y;
-    
-    vec2 wiggle = sin(uv * scale) * 0.02;
+    vec2 ww = uv * scale;
+    vec2 wiggle = (sin(ww+scale)) * 0.02;
     vec4 color = texture(texture1, uv + wiggle);
-  
+    
     outputColor = color;
 }
 

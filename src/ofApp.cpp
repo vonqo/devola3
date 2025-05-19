@@ -32,7 +32,7 @@ void ofApp::setup(){
     }
     soundSettings.numInputChannels = 1;   // Mono input
     soundSettings.numOutputChannels = 0;  // No output
-    soundSettings.bufferSize = 512;
+    soundSettings.bufferSize = 1024;
     soundSettings.sampleRate = 44100;
     soundSettings.numBuffers = 4;
     soundSettings.setInListener(this);
@@ -73,7 +73,7 @@ void ofApp::setup(){
     sceneManager.setup(ofGetWidth(), ofGetHeight());
     
     // --- GUI SETUP --- //
-    gui = new ofxDatGui(ofxDatGuiAnchor::TOP_RIGHT);
+    gui = new ofxDatGui(ofxDatGuiAnchor::TOP_LEFT);
     gui->setTheme(new devolaGuiTheme());
     gui->addFRM();
     overlayToggle   = gui->addToggle("Show Overlay"); overlayToggle->setChecked(isOverlayShow);
@@ -111,7 +111,7 @@ void ofApp::setup(){
     rmsSlider = gui->addSlider("rms", 0, 1); rmsSlider->setValue(0);
     ofxDatGuiLog::quiet();
     
-    graphValues.assign(700, 0.0);
+    graphValues.assign(600, 0.0);
 }
 
 //--------------------------------------------------------------
@@ -406,6 +406,7 @@ void ofApp::onInputAudioSelect(ofxDatGuiDropdownEvent ev){
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
     mainBuffer.allocate(w, h);
+    sceneManager.setScreen(w, h);
 }
 
 //--------------------------------------------------------------

@@ -9,8 +9,6 @@
 #include "ResourceManager.h"
 #include "ofxFft.h"
 
-enum {SINE, MIC, NOISE};
-
 class SpectogramScene : public ofxScene {
     
 private:
@@ -35,5 +33,16 @@ public:
     void windowResized(int w, int h) override;
     void onAudioInput(ofSoundBuffer & input);
     
+    int sampleRate;
+    int bufferSize;
+    int plotHeight;
+    int spectrogramOffset;
     
+    ofxFft* fft;
+    ofMutex soundMutex;
+    vector<float> drawBuffer, middleBuffer, audioBuffer;
+    vector<vector<float>> spectogramData;
+    ofImage spectrogram;
+    
+    void pushSpectogram(vector<float> buffer);
 };

@@ -16,7 +16,8 @@ out vec4 outputColor;
 
 #define PI 3.1415926
 
-const float it = 5.0; // Number of iterations
+// const float it = 5.0; // Number of iterations
+float it = iteration; // Number of iterations
 
 vec2 rotate(vec2 pos, float angle) {
     float c = cos(angle);
@@ -28,16 +29,16 @@ void main()
 {
     outputColor = vec4(0);
     float mx = max(uResolution.x, uResolution.y);
-   
+    
     vec2 uv = gl_FragCoord.xy / min(uResolution.x,uResolution.y);
     uv.x -= 0.40;
     
 	vec2 q= gl_FragCoord.xy / uResolution.xy;
-   
+    
     float t=uTime;
-	   
+	
     // let's rotate ... 2D! gtr
-    uv = rotate( uv*2.-1.,sin(t/4.));
+    uv = rotate( uv*2.-1.,sin(t/3.));
     // if(iMouse.z>0.)  uv = rotate( uv*2.-1.,1.);
 	
 	float v = pow(3.0,it)+10.0;
@@ -51,7 +52,6 @@ void main()
         }
 		v/=3.0;	
 		uv.x =uv.x+speed;// let's scrolling gtr 
-       
 	}
     
     outputColor *= vec4(texture(texture2,q).xyz,1.0);

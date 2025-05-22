@@ -31,6 +31,7 @@ public:
     ofShader blmdGlitch;
     ofShader blmdMenger;
     ofShader blmdDatamosh;
+    ofShader blmdGoldenSilk;
     ofShader intensityScope;
     
     static ResourceManager& getInstance() {
@@ -59,6 +60,7 @@ public:
         blmdMenger.load("shaders/blmd_menger/menger.vert", "shaders/blmd_menger/menger.frag");
         blmdDatamosh.load("shaders/blmd_datamosh/datamosh.vert", "shaders/blmd_datamosh/datamosh.frag");
         intensityScope.load("shaders/vid_int_scp/intensity_scope.vert", "shaders/vid_int_scp/intensity_scope.frag");
+        blmdGoldenSilk.load("shaders/blmd_goldensilk/silk.vert", "shaders/blmd_goldensilk/silk.frag");
     }
 };
 

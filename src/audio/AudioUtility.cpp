@@ -10,6 +10,3 @@ float AudioUtility::rms(ofSoundBuffer & input){
     float rms = input.getRMSAmplitude();
     return ofMap(rms, 0, 0.5f, 0, 1);
 }
-
-
-

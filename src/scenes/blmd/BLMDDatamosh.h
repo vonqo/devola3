@@ -36,10 +36,13 @@ public:
     void windowResized(int w, int h) override;
     void onAudioInput(ofSoundBuffer & input);
     void onCameraInput(ofPixels & input);
+    void drawBorder();
     
     float audioEnergy = 0;
     ofShader datamoshShader;
+    ofShader goldensilkShader;
     ofFbo datamoshBuffer;
+    ofFbo tintBuffer;
     ofPixels cameraData;
     ofTexture cameraTexture;
     

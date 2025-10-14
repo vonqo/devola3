@@ -36,7 +36,7 @@ void SpectogramScene::draw(){
     for(int i = 0; i < spectogramData.size(); i++) {
         for(int e = 0; e < spectogramData[i].size(); e++) {
             float val = spectogramData[i][e] * 10;
-            spectrogram.setColor(i,e,ofColor(0,255*val,0));
+            spectrogram.setColor(i,e,ofColor(255*val,0,0));
         }
     }
     spectrogram.update();
@@ -54,7 +54,7 @@ void SpectogramScene::keyPressed(int key){
     
 }
 
-//--------------------------------------------------------------
+//--------------------------------------------------------------1
 void SpectogramScene::windowResized(int w, int h){
     
 }

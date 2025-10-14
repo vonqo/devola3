@@ -187,7 +187,7 @@ float vignette(vec2 uv) {
     
     float vig = uv.x*uv.y * 15.0; // multiply with sth for intensity
     
-    vig = pow(vig, 0.1); // change pow for modifying the extend of the  vignette
+    vig = pow(vig, 0.03); // change pow for modifying the extend of the  vignette
     return vig;
 }
 
@@ -252,29 +252,31 @@ void main()
 {
     vec2 uv = gl_FragCoord.xy/resolution.y;
     float t = 0.5*time;
-	  uv.y += 0.03*sin(9.0*uv.x-(t*1.5));
+	uv.y += 0.03*sin(9.0*uv.x-(t*1.5));
     vec4 txt = texture(texture1, uv * vec2(0.5,1));
     
     // add colorize to texture
-    float lg = 0.5f; // lightness
-    float st = 0.9f; // saturation
-    float hue = 0.13f; // hue
+    float hue = 0.10f; // hue
+    float st = 0.87f; // saturation
+    float lg = 0.26f; // lightness
 
     float lume = dot(txt.rgb, vec3(0.299, 0.587, 0.114));
     float adjustedLume = clamp(lume + lg, 0.0, 1.0);
     vec3 hsl = vec3(hue, st, adjustedLume);
     vec3 colorizedTexture = hsl2rgb(hsl);
     txt = vec4(colorizedTexture, txt.a);
-
+    
     // add saturation to texture
-    float saturation = 0.32f;
-    vec3 weights_ = vec3(0.2125, 0.7154, 0.0721); // sums to 1
-    float luminance_ = dot(txt.rgb, weights_);
-    txt = mix(vec4(luminance_), txt, vec4(saturation) * 5.);
+    // float saturation = 0.32f;
+    // vec3 weights_ = vec3(0.2125, 0.7154, 0.0721); // sums to 1
+    // float luminance_ = dot(txt.rgb, weights_);
+    // txt = mix(vec4(luminance_), txt, vec4(saturation) * 5.);
 
     // add contrast to texture
-    float contrast = 0.8;
-    txt = (txt - .5) * contrast * 2. + .5; // 0 to 2 contrast
+    // float contrast = 0.8f;
+    // txt = (txt - .5) * contrast * 1. + .5; // 0 to 2 contrast
+
+    outputColor = txt;
     
     float f = 0.6+0.4*sin(5.0*(uv.x+uv.y+cos(3.0*uv.x+5.0*uv.y)+0.02*t)+sin(20.0*(uv.x+uv.y-0.1*t)));
     float b = 1.8;
@@ -301,7 +303,7 @@ void main()
     // mixed = pinLight(noiseGreyShifted, outputColor.xyz);
     // mixed = linearLight(noiseGreyShifted, s);
     
-	  outputColor = vec4(mixed, 1.0) * vig;
+	outputColor = vec4(mixed, 1.0) * vig;
     
     // float k = (sin(time / 1.0) + 1.0)/2.0 + 0.55;
    

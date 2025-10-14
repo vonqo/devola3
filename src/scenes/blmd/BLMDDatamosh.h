@@ -38,7 +38,10 @@ public:
     void onCameraInput(ofPixels & input);
     void drawBorder();
     
+    float iteration = 4.5;
     float audioEnergy = 0;
+    bool isFlip = false;
+    
     ofShader datamoshShader;
     ofShader goldensilkShader;
     ofFbo datamoshBuffer;

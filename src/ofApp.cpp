@@ -112,6 +112,9 @@ void ofApp::setup(){
     ofxDatGuiLog::quiet();
     
     graphValues.assign(600, 0.0);
+    
+    // TEST
+    // postGlitch.setFx(OFXPOSTGLITCH_ASCII,1);
 }
 
 //--------------------------------------------------------------
@@ -407,6 +410,7 @@ void ofApp::onInputAudioSelect(ofxDatGuiDropdownEvent ev){
 void ofApp::windowResized(int w, int h){
     mainBuffer.allocate(w, h);
     sceneManager.setScreen(w, h);
+    postGlitch.setup(&mainBuffer);
 }
 
 //--------------------------------------------------------------

@@ -11,7 +11,7 @@ class devolaGuiTheme : public ofxDatGuiTheme{
 public:
     devolaGuiTheme()
     {
-        font.size = 8;
+        font.size = 10;
         font.file = AssetPath + "ofxbraitsch/fonts/JetBrainsMono-Medium.ttf";
         stripe.visible = false;
         color.icons = hex(0x9C9DA1);

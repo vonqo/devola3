@@ -21,11 +21,15 @@ public:
     ofImage carpet1;
     ofImage carpet2;
     ofImage carpet3;
+    ofImage carpet4;
+    ofImage carpet8;
     ofImage carpetMenger;
     ofImage carpetTear;
     ofImage textureNoise1;
     ofImage textureTest1;
     ofImage textureUVMap;
+    ofImage textureCellular;
+    ofImage borderBlue;
     
     ofShader blmdMirror;
     ofShader blmdGlitch;
@@ -48,12 +52,17 @@ public:
         carpet1.load("images/carpet1.jpg");
         carpet2.load("images/carpet2.png");
         carpet3.load("images/carpet3.jpg");
+        carpet4.load("images/carpet4.png");
+        carpet8.load("images/carpet8.png");
         carpetMenger.load("images/menger.png");
         carpetTear.load("images/tear_rug_white.png");
+        
+        borderBlue.load("images/blue_border.png");
         
         textureNoise1.load("images/texture_noise1.png");
         textureTest1.load("images/texture_test1.png");
         textureUVMap.load("images/texture_uv_map.jpg");
+        textureCellular.load("images/cellular_texture.png");
         
         blmdMirror.load("shaders/blmd_mirror/mirror.vert", "shaders/blmd_mirror/mirror.frag");
         blmdGlitch.load("shaders/blmd_glitch/glitch.vert", "shaders/blmd_glitch/glitch.frag");

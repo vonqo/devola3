@@ -70,7 +70,6 @@ void main()
 {
   	float aspect = resolution.x / resolution.y;
 	vec2 uv = gl_FragCoord.xy / resolution.xy;
-	uv.y = 1.0 - uv.y;
 	
 	float time = mod(uTime, 32.0); // + modelmat[0].x + modelmat[0].z;
 
@@ -89,7 +88,7 @@ void main()
 	r1 = 1.0 - max( 0.0, ((r1<1.0) ? r1 : 0.9999999) ); //note: weird ass bug on old drivers
 	float rnd2 = rand( vec2(mytrunc( uv.y, 40.0*r1 ), time) ); //vert
 	float r2 = sat( rnd2 );
-
+	
 	float rnd3 = rand( vec2(mytrunc( uv.y, 10.0*r0 ), time) );
 	float r3 = (1.0-sat(rnd3+0.8)) - 0.1;
 

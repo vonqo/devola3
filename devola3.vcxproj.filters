@@ -7,660 +7,600 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\audio\AudioUtility.cpp">
-			<Filter>src\audio</Filter>
+		<ClCompile Include="src/audio/AudioUtility.cpp">
+			<Filter>src/audio</Filter>
 		</ClCompile>
-		<ClCompile Include="src\audio\FFTEnergyAnalyzer.cpp">
-			<Filter>src\audio</Filter>
+		<ClCompile Include="src/scenes/blmd/BLMDBlank.cpp">
+			<Filter>src/scenes/blmd</Filter>
 		</ClCompile>
-		<ClCompile Include="src\scenes\blmd\BLMDBlank.cpp">
-			<Filter>src\scenes\blmd</Filter>
+		<ClCompile Include="src/scenes/blmd/BLMDDatamosh.cpp">
+			<Filter>src/scenes/blmd</Filter>
 		</ClCompile>
-		<ClCompile Include="src\scenes\blmd\BLMDDatamosh.cpp">
-			<Filter>src\scenes\blmd</Filter>
+		<ClCompile Include="src/scenes/blmd/BLMDGlitch.cpp">
+			<Filter>src/scenes/blmd</Filter>
 		</ClCompile>
-		<ClCompile Include="src\scenes\blmd\BLMDGlitch.cpp">
-			<Filter>src\scenes\blmd</Filter>
+		<ClCompile Include="src/scenes/blmd/BLMDMenger.cpp">
+			<Filter>src/scenes/blmd</Filter>
 		</ClCompile>
-		<ClCompile Include="src\scenes\blmd\BLMDMenger.cpp">
-			<Filter>src\scenes\blmd</Filter>
+		<ClCompile Include="src/scenes/blmd/BLMDMirror.cpp">
+			<Filter>src/scenes/blmd</Filter>
 		</ClCompile>
-		<ClCompile Include="src\scenes\blmd\BLMDMirror.cpp">
-			<Filter>src\scenes\blmd</Filter>
+		<ClCompile Include="src/scenes/blmd/BLMDOrnament.cpp">
+			<Filter>src/scenes/blmd</Filter>
 		</ClCompile>
-		<ClCompile Include="src\scenes\blmd\BLMDOrnament.cpp">
-			<Filter>src\scenes\blmd</Filter>
+		<ClCompile Include="src/scenes/data/SpectogramScene.cpp">
+			<Filter>src/scenes/data</Filter>
 		</ClCompile>
-		<ClCompile Include="src\scenes\data\SpectogramScene.cpp">
-			<Filter>src\scenes\data</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxBlur/src/ofxBlur.cpp">
+			<Filter>addons/ofxBlur/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxBlur\src\ofxBlur.cpp">
-			<Filter>addons\ofxBlur\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/core/ofxDatGuiComponent.cpp">
+			<Filter>addons/ofxDatGui/src/core</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp">
-			<Filter>addons\ofxDatGui\src\core</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/ofxDatGui.cpp">
+			<Filter>addons/ofxDatGui/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\ofxDatGui.cpp">
-			<Filter>addons\ofxDatGui\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/libs/ofxSmartFont/ofxSmartFont.cpp">
+			<Filter>addons/ofxDatGui/src/libs/ofxSmartFont</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp">
-			<Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxEasing/src/easing_terms_of_use.html">
+			<Filter>addons/ofxEasing/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src\easing_terms_of_use.html">
-			<Filter>addons\ofxEasing\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxFft.cpp">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFft.cpp">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxEasyFft.cpp">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxEasyFft.cpp">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxFftw.cpp">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFftw.cpp">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxFftBasic.cpp">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFftBasic.cpp">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxProcessFFT.cpp">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxProcessFFT.cpp">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxFft/libs/kiss/kiss_fft.c">
+			<Filter>addons/ofxFft/libs/kiss</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\kiss_fft.c">
-			<Filter>addons\ofxFft\libs\kiss</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxFft/libs/kiss/kiss_fftr.c">
+			<Filter>addons/ofxFft/libs/kiss</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\kiss_fftr.c">
-			<Filter>addons\ofxFft\libs\kiss</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxJSON/src/ofxJSONElement.cpp">
+			<Filter>addons/ofxJSON/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSONElement.cpp">
-			<Filter>addons\ofxJSON\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp">
+			<Filter>addons/ofxJSON/libs/jsoncpp/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\src\jsoncpp.cpp">
-			<Filter>addons\ofxJSON\libs\jsoncpp\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiTimecode.cpp">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiTimecode.cpp">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxBaseMidi.cpp">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxBaseMidi.cpp">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiOut.cpp">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiOut.cpp">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/desktop/ofxRtMidiIn.cpp">
+			<Filter>addons/ofxMidi/src/desktop</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop\ofxRtMidiIn.cpp">
-			<Filter>addons\ofxMidi\src\desktop</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/desktop/ofxRtMidiOut.cpp">
+			<Filter>addons/ofxMidi/src/desktop</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop\ofxRtMidiOut.cpp">
-			<Filter>addons\ofxMidi\src\desktop</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiClock.cpp">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiClock.cpp">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiMessage.cpp">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiMessage.cpp">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidi.cpp">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidi.cpp">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiIn.cpp">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiIn.cpp">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxMidi/libs/rtmidi/RtMidi.cpp">
+			<Filter>addons/ofxMidi/libs/rtmidi</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\rtmidi\RtMidi.cpp">
-			<Filter>addons\ofxMidi\libs\rtmidi</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxUDPManager.cpp">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPManager.cpp">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxTCPServer.cpp">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPServer.cpp">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxTCPManager.cpp">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPManager.cpp">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxTCPClient.cpp">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPClient.cpp">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxNetworkUtils.cpp">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetworkUtils.cpp">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PM.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PM.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_CMM.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_CMM.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P4M.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4M.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PMG.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PMG.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_CM.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_CM.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P3M1.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P3M1.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PGG.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PGG.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PG.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PG.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P1.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P1.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P3.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P3.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P2.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P2.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PMM.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PMM.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P6M.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P6M.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P6.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P6.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P31M.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P31M.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P4.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P4G.cpp">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4G.cpp">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/Ornament.cpp">
+			<Filter>addons/ofxOrnament/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\Ornament.cpp">
-			<Filter>addons\ofxOrnament\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/Tile.cpp">
+			<Filter>addons/ofxOrnament/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\Tile.cpp">
-			<Filter>addons\ofxOrnament\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/TileFactory.cpp">
+			<Filter>addons/ofxOrnament/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\TileFactory.cpp">
-			<Filter>addons\ofxOrnament\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/ofxPostGlitch.cpp">
+			<Filter>addons/ofxPostGlitch/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.cpp">
-			<Filter>addons\ofxPostGlitch\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxSceneManager/src/ofxSceneManager.cpp">
+			<Filter>addons/ofxSceneManager/src</Filter>
 		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.cpp">
-			<Filter>addons\ofxSceneManager\src</Filter>
-		</ClCompile>
-		<ClCompile Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.cpp">
-			<Filter>addons\ofxSceneManager\src</Filter>
+		<ClCompile Include="../../../of_v20251012_osx_release/addons/ofxSceneManager/src/ofxScene.cpp">
+			<Filter>addons/ofxSceneManager/src</Filter>
 		</ClCompile>
 	</ItemGroup>
 	<ItemGroup>
 		<Filter Include="src">
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="src\audio">
-			<UniqueIdentifier>{4751A1CC--C2A-9-41-2F-A-F02-10C159FF2D5F}</UniqueIdentifier>
+		<Filter Include="src/audio">
+			<UniqueIdentifier>{C3D8781E--5D6-4-4E-A8-9-CB0-E850B3115BCB}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="src\scenes">
-			<UniqueIdentifier>{E461D945--3EB-9-4D-A2-B-67C-91772353D57F}</UniqueIdentifier>
+		<Filter Include="src/scenes">
+			<UniqueIdentifier>{CF0241EB--9ED-0-4C-AE-A-728-61DF5A711FC2}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="src\scenes\blmd">
-			<UniqueIdentifier>{E73C180E--5FE-A-4C-C4-9-4DA-A8E4D73A379D}</UniqueIdentifier>
+		<Filter Include="src/scenes/blmd">
+			<UniqueIdentifier>{53E9C3D6--A6A-B-49-86-9-E80-AF3A02CF9744}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="src\scenes\data">
-			<UniqueIdentifier>{146B14B0--8AC-C-41-36-8-EE5-6A1E703D178D}</UniqueIdentifier>
+		<Filter Include="src/scenes/data">
+			<UniqueIdentifier>{613C7C03--E54-6-46-44-B-14C-696294737216}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons">
-			<UniqueIdentifier>{EB5CB508--EA7-4-4C-B8-A-885-B701DDAA1491}</UniqueIdentifier>
+		<Filter Include="addons/ofxBlur/src">
+			<UniqueIdentifier>{BDD9E3F6--A49-6-45-9D-8-46D-7C5BBE7B8887}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxBlur">
-			<UniqueIdentifier>{072EC314--270-A-4B-72-B-2AE-33F1351EC587}</UniqueIdentifier>
+		<Filter Include="addons/ofxDatGui/src/core">
+			<UniqueIdentifier>{39416FF6--628-9-4D-69-B-3CC-AFF3B90AD22B}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxBlur\src">
-			<UniqueIdentifier>{2C3AF37C--2DC-2-43-68-B-160-AE3E1A9FBF46}</UniqueIdentifier>
+		<Filter Include="addons/ofxDatGui/src">
+			<UniqueIdentifier>{820E8C16--407-3-4C-AE-B-EC5-24C43123B32E}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxDatGui">
-			<UniqueIdentifier>{BA41DFB7--C63-F-43-EB-8-955-46B6397BE9EB}</UniqueIdentifier>
+		<Filter Include="addons/ofxDatGui/src/libs/ofxSmartFont">
+			<UniqueIdentifier>{23611AF5--DC5-9-42-8E-8-46F-DD0C5304A170}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxDatGui\src">
-			<UniqueIdentifier>{0AB853EF--3EF-4-41-AD-8-C23-B9152A60E780}</UniqueIdentifier>
+		<Filter Include="addons/ofxDatGui/src/components">
+			<UniqueIdentifier>{186B357D--B9B-E-48-F5-8-2FF-582D97C86AAB}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxDatGui\src\core">
-			<UniqueIdentifier>{C6004D3F--5D2-8-4E-3C-8-862-22F179A1EB6E}</UniqueIdentifier>
+		<Filter Include="addons/ofxDatGui/src/themes">
+			<UniqueIdentifier>{7BD987B1--DD5-4-4C-A5-8-84E-C2BD83B2948A}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxDatGui\src\libs">
-			<UniqueIdentifier>{80099617--270-F-45-E8-A-CB8-AFD86C83FF78}</UniqueIdentifier>
+		<Filter Include="addons/ofxEasing/src">
+			<UniqueIdentifier>{13BF33E9--266-9-44-C4-9-021-816ED7B183BB}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxDatGui\src\libs\ofxSmartFont">
-			<UniqueIdentifier>{672A6EE6--73F-9-43-EC-A-52B-8154DA81C21D}</UniqueIdentifier>
+		<Filter Include="addons/ofxFft/src">
+			<UniqueIdentifier>{62D74E85--15A-E-40-F4-B-244-A3DFC1B1EA49}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxDatGui\src\components">
-			<UniqueIdentifier>{4C06AC73--DEC-1-4D-10-B-38C-E1CEB679B8AA}</UniqueIdentifier>
+		<Filter Include="addons/ofxFft/libs/kiss">
+			<UniqueIdentifier>{F1659C4B--B1E-0-46-E9-8-568-59E667458AD7}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxDatGui\src\themes">
-			<UniqueIdentifier>{BFEED630--691-0-4A-52-A-C4E-177B1E2B85AD}</UniqueIdentifier>
+		<Filter Include="addons/ofxFft/libs/fftw/include">
+			<UniqueIdentifier>{530F6C52--A8C-2-42-62-9-E51-3D575A9BFADA}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxEasing">
-			<UniqueIdentifier>{160AC39C--CA1-7-43-67-A-967-FB9E5CB333C6}</UniqueIdentifier>
+		<Filter Include="addons/ofxJSON/src">
+			<UniqueIdentifier>{597D17CE--B01-3-4F-4F-A-591-C89CAD9629B0}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxEasing\src">
-			<UniqueIdentifier>{B03A4EB4--7A0-C-42-D7-9-E74-EADC44DC35E7}</UniqueIdentifier>
+		<Filter Include="addons/ofxJSON/libs/jsoncpp/include/json">
+			<UniqueIdentifier>{30E69D67--7AC-1-4B-93-9-AF1-64100F910A69}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxFft">
-			<UniqueIdentifier>{F700F6C7--CE1-C-4A-A1-8-835-1F327736589B}</UniqueIdentifier>
+		<Filter Include="addons/ofxJSON/libs/jsoncpp/src">
+			<UniqueIdentifier>{6FBE5BFC--0D2-B-42-CE-9-03A-1FBB948F18B8}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxFft\src">
-			<UniqueIdentifier>{0312525B--0CF-D-4A-8A-8-73D-6FD6092912A0}</UniqueIdentifier>
+		<Filter Include="addons/ofxMidi/src">
+			<UniqueIdentifier>{9FB4B758--5FE-C-4D-0D-A-7D9-D7B52EC72DFC}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxFft\libs">
-			<UniqueIdentifier>{8B96F285--5BB-6-44-67-8-117-5D6D1F6019DE}</UniqueIdentifier>
+		<Filter Include="addons/ofxMidi/src/desktop">
+			<UniqueIdentifier>{E9108C9E--B6E-F-4B-E3-A-501-9F88FFA51835}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxFft\libs\kiss">
-			<UniqueIdentifier>{43E25248--242-E-43-F5-A-988-BB7CAD93D155}</UniqueIdentifier>
+		<Filter Include="addons/ofxMidi/libs/rtmidi">
+			<UniqueIdentifier>{A7E47429--DAA-F-41-B6-9-426-4B258449A8F5}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxFft\libs\fftw">
-			<UniqueIdentifier>{F93791BA--89F-1-4B-D4-A-637-0D4EC3B36375}</UniqueIdentifier>
+		<Filter Include="addons/ofxNetwork/src">
+			<UniqueIdentifier>{C43E90AA--DBB-1-49-D9-8-A85-CD8E1E44B663}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxFft\libs\fftw\include">
-			<UniqueIdentifier>{6C1745B6--AB7-2-43-D5-A-BB3-B98A3A8FF362}</UniqueIdentifier>
+		<Filter Include="addons/ofxOrnament/src">
+			<UniqueIdentifier>{CA00DA21--718-8-45-7F-9-B4D-86F385E1716D}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxJSON">
-			<UniqueIdentifier>{72260281--73E-C-48-07-8-D46-7E2887A86B1F}</UniqueIdentifier>
+		<Filter Include="addons/ofxOrnament/src/types">
+			<UniqueIdentifier>{C094556A--81B-F-40-ED-A-71A-75CC0F004290}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxJSON\src">
-			<UniqueIdentifier>{5D946BB8--A70-E-4C-13-8-934-611F85D094F8}</UniqueIdentifier>
+		<Filter Include="addons/ofxPostGlitch/src">
+			<UniqueIdentifier>{19AE8BD5--092-5-45-3B-B-F30-EC8D9AF2E913}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxJSON\libs">
-			<UniqueIdentifier>{37CCB816--AE4-A-43-2F-9-E8A-476936B5CAB1}</UniqueIdentifier>
+		<Filter Include="addons/ofxPostGlitch/src/shaders">
+			<UniqueIdentifier>{35FECFD3--44A-3-48-CD-B-356-8B4BB6A90922}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxJSON\libs\jsoncpp">
-			<UniqueIdentifier>{1A8075D9--26B-4-44-0B-9-BAA-D60D40F23F70}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxJSON\libs\jsoncpp\include">
-			<UniqueIdentifier>{0701438B--C59-D-44-21-8-F28-D46226ADEB79}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxJSON\libs\jsoncpp\include\json">
-			<UniqueIdentifier>{AAC16F17--0C9-5-47-6B-8-21A-13FC0C999938}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxJSON\libs\jsoncpp\src">
-			<UniqueIdentifier>{FDE54C95--EF0-C-4B-C7-9-DB8-C5C209794301}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxMidi">
-			<UniqueIdentifier>{5B0AE307--EB8-A-4E-C4-8-D33-B8B2AC61B569}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxMidi\src">
-			<UniqueIdentifier>{F195D5D0--BA5-D-46-AF-B-274-640E37C8BC74}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxMidi\src\desktop">
-			<UniqueIdentifier>{E480DD1A--184-A-4A-A2-8-6BA-CCB8BFC10B5A}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxMidi\libs">
-			<UniqueIdentifier>{8F5C3DFD--3BF-9-45-31-A-0EE-59FDDC00051C}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxMidi\libs\rtmidi">
-			<UniqueIdentifier>{8ECA4A10--505-A-4A-2E-8-AB1-93C22330E6C7}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxNetwork">
-			<UniqueIdentifier>{B1A9331D--FA0-B-4B-50-9-B66-4FF8A91FDB07}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxNetwork\src">
-			<UniqueIdentifier>{6C5CD5E0--F85-A-4F-13-A-A9B-868D03BFB1AD}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxOrnament">
-			<UniqueIdentifier>{FFCE294D--CD9-D-4C-24-8-30E-1496E4A48922}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxOrnament\src">
-			<UniqueIdentifier>{2357DD6F--65B-9-4B-D1-9-9D4-CFC5FAFEE5F9}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxOrnament\src\types">
-			<UniqueIdentifier>{3703F304--934-D-47-2B-B-6A0-A4CE094AB035}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxPostGlitch">
-			<UniqueIdentifier>{4525BCEC--519-6-47-66-9-67B-581EB0806214}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxPostGlitch\src">
-			<UniqueIdentifier>{B93581C6--9A0-E-4D-D8-8-9FB-C039DC8813F7}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxPostGlitch\src\shaders">
-			<UniqueIdentifier>{1F93C64D--E05-6-4E-12-A-0A7-2CD7AF01A083}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxSceneManager">
-			<UniqueIdentifier>{00CDFA5F--E9C-A-41-AF-9-74C-43BF7FF9C134}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxSceneManager\src">
-			<UniqueIdentifier>{B3F21AA4--7A0-1-4E-8E-A-A6D-7419F14AD533}</UniqueIdentifier>
+		<Filter Include="addons/ofxSceneManager/src">
+			<UniqueIdentifier>{06FE8B07--2BD-B-4C-DD-9-030-816B6A508D68}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
-		<ClInclude Include="src\audio\AudioUtility.h">
-			<Filter>src\audio</Filter>
+		<ClInclude Include="src/audio/AudioUtility.h">
+			<Filter>src/audio</Filter>
 		</ClInclude>
-		<ClInclude Include="src\audio\FFTEnergyAnalyzer.h">
-			<Filter>src\audio</Filter>
+		<ClInclude Include="src/scenes/ResourceManager.h">
+			<Filter>src/scenes</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\ResourceManager.h">
-			<Filter>src\scenes</Filter>
+		<ClInclude Include="src/scenes/blmd/BLMDBlank.h">
+			<Filter>src/scenes/blmd</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\blmd\BLMDBlank.h">
-			<Filter>src\scenes\blmd</Filter>
+		<ClInclude Include="src/scenes/blmd/BLMDDatamosh.h">
+			<Filter>src/scenes/blmd</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\blmd\BLMDDatamosh.h">
-			<Filter>src\scenes\blmd</Filter>
+		<ClInclude Include="src/scenes/blmd/BLMDGlitch.h">
+			<Filter>src/scenes/blmd</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\blmd\BLMDGlitch.h">
-			<Filter>src\scenes\blmd</Filter>
+		<ClInclude Include="src/scenes/blmd/BLMDMenger.h">
+			<Filter>src/scenes/blmd</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\blmd\BLMDMenger.h">
-			<Filter>src\scenes\blmd</Filter>
+		<ClInclude Include="src/scenes/blmd/BLMDMirror.h">
+			<Filter>src/scenes/blmd</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\blmd\BLMDMirror.h">
-			<Filter>src\scenes\blmd</Filter>
+		<ClInclude Include="src/scenes/blmd/BLMDOrnament.h">
+			<Filter>src/scenes/blmd</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\blmd\BLMDOrnament.h">
-			<Filter>src\scenes\blmd</Filter>
+		<ClInclude Include="src/scenes/data/SpectogramScene.h">
+			<Filter>src/scenes/data</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\data\SpectogramScene.h">
-			<Filter>src\scenes\data</Filter>
+		<ClInclude Include="src/scenes/devolaGuiTheme.h">
+			<Filter>src/scenes</Filter>
 		</ClInclude>
-		<ClInclude Include="src\scenes\devolaGuiTheme.h">
-			<Filter>src\scenes</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxBlur/src/ofxBlur.h">
+			<Filter>addons/ofxBlur/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxBlur\src\ofxBlur.h">
-			<Filter>addons\ofxBlur\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/core/ofxDatGuiIntObject.h">
+			<Filter>addons/ofxDatGui/src/core</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h">
-			<Filter>addons\ofxDatGui\src\core</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/core/ofxDatGuiConstants.h">
+			<Filter>addons/ofxDatGui/src/core</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiConstants.h">
-			<Filter>addons\ofxDatGui\src\core</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/core/ofxDatGuiEvents.h">
+			<Filter>addons/ofxDatGui/src/core</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiEvents.h">
-			<Filter>addons\ofxDatGui\src\core</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/core/ofxDatGuiComponent.h">
+			<Filter>addons/ofxDatGui/src/core</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.h">
-			<Filter>addons\ofxDatGui\src\core</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/ofxDatGui.h">
+			<Filter>addons/ofxDatGui/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\ofxDatGui.h">
-			<Filter>addons\ofxDatGui\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/libs/ofxSmartFont/ofxSmartFont.h">
+			<Filter>addons/ofxDatGui/src/libs/ofxSmartFont</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.h">
-			<Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiColorPicker.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiColorPicker.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiSlider.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiSlider.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiFRM.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiFRM.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiTimeGraph.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiTimeGraph.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiTextInputField.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiTextInputField.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiButton.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiButton.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiControls.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiControls.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiGroups.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiGroups.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiScrollView.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiScrollView.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiLabel.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiLabel.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGui2dPad.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGui2dPad.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiTextInput.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiTextInput.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/components/ofxDatGuiMatrix.h">
+			<Filter>addons/ofxDatGui/src/components</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\components\ofxDatGuiMatrix.h">
-			<Filter>addons\ofxDatGui\src\components</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/themes/ofxDatGuiTheme.h">
+			<Filter>addons/ofxDatGui/src/themes</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes\ofxDatGuiTheme.h">
-			<Filter>addons\ofxDatGui\src\themes</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxDatGui/src/themes/ofxDatGuiThemes.h">
+			<Filter>addons/ofxDatGui/src/themes</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h">
-			<Filter>addons\ofxDatGui\src\themes</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxEasing/src/ofxEasing.h">
+			<Filter>addons/ofxEasing/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxEasing\src\ofxEasing.h">
-			<Filter>addons\ofxEasing\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxFftw.h">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFftw.h">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxFftBasic.h">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFftBasic.h">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxEasyFft.h">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxEasyFft.h">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxFft.h">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxFft.h">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/src/ofxProcessFFT.h">
+			<Filter>addons/ofxFft/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\src\ofxProcessFFT.h">
-			<Filter>addons\ofxFft\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/libs/kiss/_kiss_fft_guts.h">
+			<Filter>addons/ofxFft/libs/kiss</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\_kiss_fft_guts.h">
-			<Filter>addons\ofxFft\libs\kiss</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/libs/kiss/kiss_fft.h">
+			<Filter>addons/ofxFft/libs/kiss</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\kiss_fft.h">
-			<Filter>addons\ofxFft\libs\kiss</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/libs/kiss/kiss_fftr.h">
+			<Filter>addons/ofxFft/libs/kiss</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\kiss\kiss_fftr.h">
-			<Filter>addons\ofxFft\libs\kiss</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxFft/libs/fftw/include/fftw3.h">
+			<Filter>addons/ofxFft/libs/fftw/include</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxFft\libs\fftw\include\fftw3.h">
-			<Filter>addons\ofxFft\libs\fftw\include</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxJSON/src/ofxJSON.h">
+			<Filter>addons/ofxJSON/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSON.h">
-			<Filter>addons\ofxJSON\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxJSON/src/ofxJSONElement.h">
+			<Filter>addons/ofxJSON/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\src\ofxJSONElement.h">
-			<Filter>addons\ofxJSON\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxJSON/libs/jsoncpp/include/json/json-forwards.h">
+			<Filter>addons/ofxJSON/libs/jsoncpp/include/json</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json\json-forwards.h">
-			<Filter>addons\ofxJSON\libs\jsoncpp\include\json</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxJSON/libs/jsoncpp/include/json/json.h">
+			<Filter>addons/ofxJSON/libs/jsoncpp/include/json</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxJSON\libs\jsoncpp\include\json\json.h">
-			<Filter>addons\ofxJSON\libs\jsoncpp\include\json</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiIn.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiIn.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiConstants.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiConstants.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiClock.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiClock.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiOut.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiOut.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/desktop/ofxRtMidiOut.h">
+			<Filter>addons/ofxMidi/src/desktop</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop\ofxRtMidiOut.h">
-			<Filter>addons\ofxMidi\src\desktop</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/desktop/ofxRtMidiIn.h">
+			<Filter>addons/ofxMidi/src/desktop</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\desktop\ofxRtMidiIn.h">
-			<Filter>addons\ofxMidi\src\desktop</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiTimecode.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiTimecode.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiMessage.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiMessage.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidiTypes.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidiTypes.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxMidi.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxMidi.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/src/ofxBaseMidi.h">
+			<Filter>addons/ofxMidi/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\src\ofxBaseMidi.h">
-			<Filter>addons\ofxMidi\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxMidi/libs/rtmidi/RtMidi.h">
+			<Filter>addons/ofxMidi/libs/rtmidi</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxMidi\libs\rtmidi\RtMidi.h">
-			<Filter>addons\ofxMidi\libs\rtmidi</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxTCPManager.h">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPManager.h">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxTCPClient.h">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPClient.h">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxNetwork.h">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetwork.h">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxUDPSettings.h">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPSettings.h">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxNetworkUtils.h">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxNetworkUtils.h">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxTCPSettings.h">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPSettings.h">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxUDPManager.h">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxUDPManager.h">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxNetwork/src/ofxTCPServer.h">
+			<Filter>addons/ofxNetwork/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxNetwork\src\ofxTCPServer.h">
-			<Filter>addons\ofxNetwork\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/OrnamentTypes.h">
+			<Filter>addons/ofxOrnament/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\OrnamentTypes.h">
-			<Filter>addons\ofxOrnament\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/TileFactory.h">
+			<Filter>addons/ofxOrnament/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\TileFactory.h">
-			<Filter>addons\ofxOrnament\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PGG.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PGG.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P31M.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P31M.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P3.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P3.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P4G.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4G.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P4M.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4M.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PG.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PG.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PM.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PM.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P4.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P4.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PMM.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PMM.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_PMG.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_PMG.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_CM.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_CM.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_CMM.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_CMM.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P1.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P1.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P3M1.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P3M1.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P6M.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P6M.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P6.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P6.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/types/Tile_P2.h">
+			<Filter>addons/ofxOrnament/src/types</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\types\Tile_P2.h">
-			<Filter>addons\ofxOrnament\src\types</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/Tile.h">
+			<Filter>addons/ofxOrnament/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\Tile.h">
-			<Filter>addons\ofxOrnament\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/ofxOrnament.h">
+			<Filter>addons/ofxOrnament/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\ofxOrnament.h">
-			<Filter>addons\ofxOrnament\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxOrnament/src/Ornament.h">
+			<Filter>addons/ofxOrnament/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxOrnament\src\Ornament.h">
-			<Filter>addons\ofxOrnament\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/ofxPostGlitch.h">
+			<Filter>addons/ofxPostGlitch/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\ofxPostGlitch.h">
-			<Filter>addons\ofxPostGlitch\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Twist.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Twist.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Invert.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Invert.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Noise.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Noise.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/CrGreeninvert.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrGreeninvert.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Outline.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Outline.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Convergence.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Convergence.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/PGShaderConstants.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\PGShaderConstants.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Swell.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Swell.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/CrRedinvert.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrRedinvert.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Glow.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Glow.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/CrRedraise.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrRedraise.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/CrBlueinvert.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrBlueinvert.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/CutSlider.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CutSlider.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/CrGreenraise.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrGreenraise.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/CrHighContrast.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrHighContrast.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Shaker.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Shaker.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/CrBlueraise.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\CrBlueraise.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxPostGlitch/src/shaders/Slitscan.h">
+			<Filter>addons/ofxPostGlitch/src/shaders</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxPostGlitch\src\shaders\Slitscan.h">
-			<Filter>addons\ofxPostGlitch\src\shaders</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxSceneManager/src/ofxSceneManager.h">
+			<Filter>addons/ofxSceneManager/src</Filter>
 		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxSceneManager.h">
-			<Filter>addons\ofxSceneManager\src</Filter>
-		</ClInclude>
-		<ClInclude Include="\Users\vonqo\of_v0.12.0_osx_release\addons\ofxSceneManager\src\ofxScene.h">
-			<Filter>addons\ofxSceneManager\src</Filter>
+		<ClInclude Include="../../../of_v20251012_osx_release/addons/ofxSceneManager/src/ofxScene.h">
+			<Filter>addons/ofxSceneManager/src</Filter>
 		</ClInclude>
 	</ItemGroup>
 	<ItemGroup>

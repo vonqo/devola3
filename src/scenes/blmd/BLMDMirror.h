@@ -6,6 +6,7 @@
 //
 #include "ofMain.h"
 #include "ofxScene.h"
+#include "ofxFft.h"
 #include "ResourceManager.h"
 
 class BLMDMirror : public ofxScene {
@@ -43,8 +44,17 @@ public:
     void onAudioInput(ofSoundBuffer & input);
     
     int set = 1;
+    
     float audioEnergy = 0;
+    float audioEnergySmoothed = 0;
+    
+    int sampleRate;
+    int bufferSize;
     float carpetBase = 1;
     ofShader mirrorShader;
+    
+    ofxFft* fft;
+    vector<float> audioBuffer;
+    vector<float> fftAmp;
     
 };

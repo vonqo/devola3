@@ -75,12 +75,17 @@ void BLMDDatamosh::draw(){
 
 //--------------------------------------------------------------
 void BLMDDatamosh::drawBorder(){
-    
+    // res.borderBlue.draw(0, 0, ofGetWidth(), ofGetHeight());
 }
 
 //--------------------------------------------------------------
 void BLMDDatamosh::keyPressed(int key){
-    
+    if(key == OF_KEY_UP) {
+        isFlip = true;
+    }
+    if(key == OF_KEY_DOWN) {
+        isFlip = false;
+    }
 }
 
 //--------------------------------------------------------------
@@ -91,7 +96,7 @@ void BLMDDatamosh::windowResized(int w, int h){
 //--------------------------------------------------------------
 void BLMDDatamosh::onCameraInput(ofPixels &input) {
     if(!isDrawing()) return;
-    input.mirror(true, true);
+    input.mirror(isFlip, false);
     cameraTexture.loadData(input);
 }
 

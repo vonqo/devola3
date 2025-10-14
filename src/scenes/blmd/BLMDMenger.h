@@ -6,6 +6,7 @@
 //
 #include "ofMain.h"
 #include "ofxScene.h"
+#include "ofxFft.h"
 #include "ResourceManager.h"
 
 class BLMDMenger : public ofxScene {
@@ -32,7 +33,14 @@ public:
     void windowResized(int w, int h) override;
     void onAudioInput(ofSoundBuffer & input);
     
-    int set = 0;
+    int set = 1;
+    float iteration = 4.5;
     float audioEnergy = 0;
+    int sampleRate;
+    int bufferSize;
     ofShader mengerShader;
+    
+    ofxFft* fft;
+    vector<float> audioBuffer;
+    vector<float> fftSmoothedBuffer;
 };

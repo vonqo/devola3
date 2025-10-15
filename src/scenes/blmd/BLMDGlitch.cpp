@@ -16,11 +16,19 @@ void BLMDGlitch::start(){
     
     res = ResourceManager::getInstance();
     glitchShader = res.blmdGlitch;
+    
+    bufferSize = 1024;
+    sampleRate = 44100;
+    
+    fft = ofxFft::create(bufferSize, OF_FFT_WINDOW_HANN);
+    fftAmp.resize(fft->getBinSize());
+    audioBuffer.assign(fft->getBinSize(), 0);
 }
 
 //--------------------------------------------------------------
 void BLMDGlitch::update(){
-    
+    float energy = AudioUtility::getEnergy(100, 255, fftAmp, sampleRate, 0.8f);
+    audioEnergy = energy;
 }
 
 //--------------------------------------------------------------
@@ -62,6 +70,10 @@ void BLMDGlitch::windowResized(int w, int h){
 //--------------------------------------------------------------
 void BLMDGlitch::onAudioInput(ofSoundBuffer & input){
     if(!isDrawing()) return;
-    audioEnergy = AudioUtility::rms(input);
+    AudioUtility::mixToMono(input, audioBuffer);
+    
+    fft->setSignal(audioBuffer.data());
+    float* bins = fft->getAmplitude();
+    memcpy(&fftAmp[0], bins, sizeof(float) * fft->getBinSize());
 }
 

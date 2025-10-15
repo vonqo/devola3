@@ -42,5 +42,5 @@ public:
     
     ofxFft* fft;
     vector<float> audioBuffer;
-    vector<float> fftSmoothedBuffer;
+    vector<float> fftAmp;
 };

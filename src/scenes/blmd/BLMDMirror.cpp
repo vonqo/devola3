@@ -18,7 +18,7 @@ void BLMDMirror::start(){
     bufferSize = 1024;
     sampleRate = 44100;
     
-    fft = ofxFft::create(bufferSize, OF_FFT_WINDOW_HAMMING);
+    fft = ofxFft::create(bufferSize, OF_FFT_WINDOW_HANN);
     fftAmp.resize(fft->getBinSize());
     audioBuffer.assign(bufferSize, 0.0f);
     
@@ -28,13 +28,9 @@ void BLMDMirror::start(){
 
 //--------------------------------------------------------------
 void BLMDMirror::update(){
-    float energy = AudioUtility::getEnergy(100, 255, fftAmp, sampleRate, false);
-    
-    audioEnergySmoothed = AudioUtility::smoothValue(energy, audioEnergySmoothed, 0.8f);
-    ofLog() << audioEnergySmoothed;
-    
+    float energy = AudioUtility::getEnergy(100, 255, fftAmp, sampleRate, 0.8f);
+    audioEnergySmoothed = AudioUtility::smoothValue(energy, audioEnergySmoothed, 0.9f);
     audioEnergy = ofMap(audioEnergySmoothed, 100, 255, 0, 25, true);
-    // ofLog() << audioEnergy;
     
     if(ofGetKeyPressed(OF_KEY_RIGHT)){
         carpetBase += 0.5f;
@@ -88,9 +84,7 @@ void BLMDMirror::windowResized(int w, int h){
 //--------------------------------------------------------------
 void BLMDMirror::onAudioInput(ofSoundBuffer & input){
     if(!isDrawing()) return;
-    
     AudioUtility::mixToMono(input, audioBuffer);
-    AudioUtility::normalizeBuffer(audioBuffer);
     
     fft->setSignal(audioBuffer.data());
     float* bins = fft->getAmplitude();

@@ -6,6 +6,7 @@
 //
 #include "ofMain.h"
 #include "ofxScene.h"
+#include "ofxFft.h"
 #include "ResourceManager.h"
 
 class BLMDGlitch : public ofxScene {
@@ -35,5 +36,11 @@ public:
     int set = 1;
     float audioEnergy = 0;
     ofShader glitchShader;
+    
+    ofxFft* fft;
+    int bufferSize;
+    int sampleRate;
+    vector<float> audioBuffer;
+    vector<float> fftAmp;
     
 };

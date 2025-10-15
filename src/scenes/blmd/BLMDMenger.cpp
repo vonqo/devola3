@@ -16,9 +16,9 @@ void BLMDMenger::start(){
     bufferSize = 1024;
     sampleRate = 44100;
     
-    fft = ofxFft::create(bufferSize, OF_FFT_WINDOW_HAMMING);
-    audioBuffer.resize(fft->getBinSize());
-    fftSmoothedBuffer.assign(fft->getBinSize(), 0);
+    fft = ofxFft::create(bufferSize, OF_FFT_WINDOW_HANN);
+    fftAmp.resize(fft->getBinSize());
+    audioBuffer.assign(fft->getBinSize(), 0);
     
     res = ResourceManager::getInstance();
     mengerShader = res.blmdMenger;
@@ -28,18 +28,8 @@ void BLMDMenger::start(){
 void BLMDMenger::update(){
     int fftSize = fft->getBinSize();
     
-    for (int i = 0; i < fftSize; i++) {
-        // Smooth the FFT data (optional)
-        fftSmoothedBuffer[i] *= 0.9;
-        if (fftSmoothedBuffer[i] < audioBuffer[i]) {
-            fftSmoothedBuffer[i] = audioBuffer[i];
-        }
-    }
-    
-    // float energy = AudioUtility::getEnergy(80, 255, fftSmoothedBuffer, sampleRate, fftSize);
-    
-    float energy = 0.5f;
-    iteration = ofMap(energy, 0, 10, 0, 1);
+    float energy = AudioUtility::getEnergy(100, 255, fftAmp, sampleRate, 0.8f);
+    iteration = ofMap(energy, 100, 255, 0, 1);
     
     if(ofGetKeyPressed(OF_KEY_LEFT)){
         if(iteration < 0) iteration -= 0.1f;
@@ -84,9 +74,9 @@ void BLMDMenger::windowResized(int w, int h){
 //--------------------------------------------------------------
 void BLMDMenger::onAudioInput(ofSoundBuffer &input){
     if(!isDrawing()) return;
-    audioEnergy = AudioUtility::rms(input);
+    AudioUtility::mixToMono(input, audioBuffer);
     
-    fft->setSignal(input.getBuffer());
-    float* curFft = fft->getAmplitude();
-    memcpy(&audioBuffer[0], curFft, sizeof(float) * fft->getBinSize());
+    fft->setSignal(audioBuffer.data());
+    float* bins = fft->getAmplitude();
+    memcpy(&fftAmp[0], bins, sizeof(float) * fft->getBinSize());
 }

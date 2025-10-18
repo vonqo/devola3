@@ -216,6 +216,11 @@ void ofApp::drawGrid(){
     ofEndShape();
     
     ofSetColor(ofColor::white);
+    
+    const int logoWidth = 230 * 0.8;
+    const int logoHegiht = 86 * 0.8;
+    
+    ResourceManager::getInstance().devolaLogo.draw(ofGetWidth() - logoWidth - 30, 30, logoWidth, logoHegiht);
 }
 
 //--------------------------------------------------------------
@@ -252,6 +257,11 @@ void ofApp::exit(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    
+    // prevent esc to exit
+    if(key == OF_KEY_ESC) {
+        ofLog() << "Escape pressed!";
+    }
     
     // toggle console '/'
     if(key == 47) {
@@ -397,8 +407,10 @@ void ofApp::onInputAudioSelect(ofxDatGuiDropdownEvent ev){
     string choice = audioInputOptions[ev.child];
     
     vector<ofSoundDevice> soundDevices = ofSoundStreamListDevices();
+    const ofSoundDevice* selectedDevice = soundSettings.getInDevice();
+    
     for(ofSoundDevice dv : soundDevices) {
-        if(dv.name == choice) {
+        if(dv.name == choice && selectedDevice->deviceID != dv.deviceID) {
             soundSettings.setInDevice(dv);
             ofSoundStreamSetup(soundSettings);
             break;

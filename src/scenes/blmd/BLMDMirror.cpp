@@ -28,15 +28,15 @@ void BLMDMirror::start(){
 
 //--------------------------------------------------------------
 void BLMDMirror::update(){
-    float energy = AudioUtility::getEnergy(100, 255, fftAmp, sampleRate, 0.8f);
+    float energy = AudioUtility::getEnergy(100, 300, fftAmp, sampleRate, 0.8f);
     audioEnergySmoothed = AudioUtility::smoothValue(energy, audioEnergySmoothed, 0.9f);
-    audioEnergy = ofMap(audioEnergySmoothed, 100, 255, 0, 25, true);
+    audioEnergy = ofMap(audioEnergySmoothed, 130, 255, 0, 25, true);
     
     if(ofGetKeyPressed(OF_KEY_RIGHT)){
-        carpetBase += 0.5f;
+        carpetBase += 0.7f;
     }
     if(ofGetKeyPressed(OF_KEY_LEFT)){
-        if(carpetBase > 1) carpetBase -= 0.5f;
+        if(carpetBase > 1) carpetBase -= 0.7f;
     }
 }
 
@@ -54,7 +54,7 @@ void BLMDMirror::draw(){
     } else if(set == 2) {
         mirrorShader.setUniformTexture("texture1", res.carpet2.getTexture(), 1);
     } else if(set == 3) {
-        mirrorShader.setUniformTexture("texture1", res.carpet4.getTexture(), 1);
+        // mirrorShader.setUniformTexture("texture1", res.carpet4.getTexture(), 1);
     }
     
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());

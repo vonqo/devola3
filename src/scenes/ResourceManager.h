@@ -16,6 +16,7 @@ public:
     int camWidth;
     int camHeight;
     
+    ofImage devolaLogo;
     ofImage blmdLogo;
     ofImage carpet0;
     ofImage carpet1;
@@ -47,6 +48,7 @@ public:
         camWidth = cw;
         camHeight = ch;
         
+        devolaLogo.load("images/devola3_logo.png");
         blmdLogo.load("images/blmd_logo.png");
         carpet0.load("images/carpet0.jpg");
         carpet1.load("images/carpet1.jpg");

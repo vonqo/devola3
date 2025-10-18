@@ -27,8 +27,22 @@ void BLMDGlitch::start(){
 
 //--------------------------------------------------------------
 void BLMDGlitch::update(){
-    float energy = AudioUtility::getEnergy(100, 255, fftAmp, sampleRate, 0.8f);
-    audioEnergy = energy;
+    float energy = AudioUtility::getEnergy(200, 320, fftAmp, sampleRate, 0.8f);
+    
+    if(glitcher <= 5.0) {
+        audioEnergy = ofMap(energy, 180, 255, 0.0, 1.0, true);
+    } else if(glitcher > 5.0 && glitcher < 10.0) {
+        audioEnergy = ofMap(energy, 180, 255, 5.0, glitcher, true);
+    } else {
+        audioEnergy = ofMap(energy, 180, 255, glitcher * 0.7, glitcher * 1.4, true);
+    }
+    
+    if(ofGetKeyPressed(OF_KEY_RIGHT)){
+        glitcher += 0.1f;
+    }
+    if(ofGetKeyPressed(OF_KEY_LEFT)){
+        if(glitcher > 0.1) glitcher -= 0.1f;
+    }
 }
 
 //--------------------------------------------------------------
@@ -36,14 +50,15 @@ void BLMDGlitch::draw(){
     glitchShader.begin();
     glitchShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
     glitchShader.setUniform1f("uTime", ofGetElapsedTimeMillis() * 0.001);
-    glitchShader.setUniform1f("glitcher", ofMap(audioEnergy,0,1,0.0,2.5));
+    glitchShader.setUniform1f("glitcher", glitcher + audioEnergy);
+    glitchShader.setUniform1f("uvOffset", uvOffset);
     glitchShader.setUniform1i("samplerNum", 8);
     if(set == 1) {
         glitchShader.setUniformTexture("texture1", res.carpet3.getTexture(), 1);
     } else if(set == 2) {
         glitchShader.setUniformTexture("texture1", res.carpet1.getTexture(), 1);
     } else if(set == 3) {
-        glitchShader.setUniformTexture("texture1", res.carpet8.getTexture(), 1);
+        // glitchShader.setUniformTexture("texture1", res.carpet8.getTexture(), 1);
     }
     
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
@@ -52,11 +67,12 @@ void BLMDGlitch::draw(){
 
 //--------------------------------------------------------------
 void BLMDGlitch::keyPressed(int key){
-    if(key == OF_KEY_LEFT) {
-        
-    } else if(key == OF_KEY_RIGHT) {
-        
+    if(key == OF_KEY_UP) {
+        // glitcher += 1.0;
+    } else if(key == OF_KEY_DOWN) {
+        glitcher = 0.0;
     }
+    
     if(key == 'a' || key == 'A') set = 1;
     if(key == 's' || key == 'S') set = 2;
     if(key == 'd' || key == 'D') set = 3;

@@ -40,6 +40,7 @@ public:
     void onCameraInput(ofPixels & input);
     void newMidiMessage(ofxMidiMessage & input) override;
     
+    Ornament ornament;
     ofShader videoIntensity;
     ofTexture cameraTexture;
     ofFbo buffer;

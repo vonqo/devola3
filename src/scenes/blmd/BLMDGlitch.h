@@ -35,6 +35,8 @@ public:
     
     int set = 1;
     float audioEnergy = 0;
+    float glitcher = 0;
+    float uvOffset = 0;
     ofShader glitchShader;
     
     ofxFft* fft;

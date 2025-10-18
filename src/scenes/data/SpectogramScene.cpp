@@ -16,7 +16,7 @@ void SpectogramScene::start(){
     sampleRate = 44100;
     spectrogramOffset = 0;
     
-    fft = ofxFft::create(bufferSize, OF_FFT_WINDOW_HAMMING);
+    fft = ofxFft::create(bufferSize, OF_FFT_WINDOW_HANN);
     audioBuffer.resize(fft->getBinSize());
     middleBuffer.resize(fft->getBinSize());
     drawBuffer.resize(fft->getBinSize());
@@ -36,7 +36,7 @@ void SpectogramScene::draw(){
     for(int i = 0; i < spectogramData.size(); i++) {
         for(int e = 0; e < spectogramData[i].size(); e++) {
             float val = spectogramData[i][e] * 10;
-            spectrogram.setColor(i,e,ofColor(255*val,0,0));
+            spectrogram.setColor(i,e,ofColor(0,255*val,130*val));
         }
     }
     spectrogram.update();

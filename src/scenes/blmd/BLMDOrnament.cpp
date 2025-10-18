@@ -11,10 +11,14 @@
 void BLMDOrnament::start(){
     ofBackground(0,0,0);
     ofDisableAntiAliasing();
+    ornament.setup(ofGetWidth(),ofGetHeight());
     res = ResourceManager::getInstance();
     videoIntensity = res.intensityScope;
     buffer.allocate(res.camWidth, res.camHeight);
     cameraTexture.allocate(res.camWidth,res.camHeight,GL_RGB);
+    
+    //assign video input to ornament
+    ornament.loadTexture(cameraTexture);
 }
 
 //--------------------------------------------------------------

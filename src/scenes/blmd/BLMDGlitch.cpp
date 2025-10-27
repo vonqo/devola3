@@ -27,14 +27,14 @@ void BLMDGlitch::start(){
 
 //--------------------------------------------------------------
 void BLMDGlitch::update(){
-    float energy = AudioUtility::getEnergy(200, 320, fftAmp, sampleRate, 0.8f);
+    float energy = AudioUtility::getEnergy(100, 300, fftAmp, sampleRate, 0.8f);
     
     if(glitcher <= 5.0) {
-        audioEnergy = ofMap(energy, 180, 255, 0.0, 1.0, true);
+        audioEnergy = ofMap(energy, 130, 255, 0.0, 1.0, true);
     } else if(glitcher > 5.0 && glitcher < 10.0) {
-        audioEnergy = ofMap(energy, 180, 255, 5.0, glitcher, true);
+        audioEnergy = ofMap(energy, 130, 255, 5.0, glitcher, true);
     } else {
-        audioEnergy = ofMap(energy, 180, 255, glitcher * 0.7, glitcher * 1.4, true);
+        audioEnergy = ofMap(energy, 130, 255, glitcher * 0.7, glitcher * 1.4, true);
     }
     
     if(ofGetKeyPressed(OF_KEY_RIGHT)){

@@ -38,6 +38,13 @@ public:
     float padLeft = 0;
     float padRight = 0;
     
+    struct dScene {
+        string name;
+        int key;
+        ofPtr<ofxScene> scene;
+    };
+    vector<dScene> scenes;
+    
     ofFbo mainBuffer;
     ofxPostGlitch postGlitch;
     ofxSceneManager sceneManager;

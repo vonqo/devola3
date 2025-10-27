@@ -34,7 +34,8 @@ public:
     void onAudioInput(ofSoundBuffer & input);
     
     int set = 1;
-    float iteration = 4.5;
+    float iteration = 5;
+    float speed = 0;
     float audioEnergy = 0;
     int sampleRate;
     int bufferSize;

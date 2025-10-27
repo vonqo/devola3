@@ -26,16 +26,14 @@ void BLMDMenger::start(){
 
 //--------------------------------------------------------------
 void BLMDMenger::update(){
-    int fftSize = fft->getBinSize();
-    
-    float energy = AudioUtility::getEnergy(100, 255, fftAmp, sampleRate, 0.8f);
-    iteration = ofMap(energy, 100, 255, 0, 1);
+    float energy = AudioUtility::getEnergy(100, 300, fftAmp, sampleRate, 0.8f);
+    audioEnergy = ofMap(energy, 100, 255, 0, 1);
     
     if(ofGetKeyPressed(OF_KEY_LEFT)){
-        if(iteration < 0) iteration -= 0.1f;
+        if(iteration > 1) iteration -= 0.05f;
     }
     if(ofGetKeyPressed(OF_KEY_RIGHT)){
-        if(iteration > 1) iteration += 0.1f;
+        if(iteration < 10) iteration += 0.05f;
     }
 }
 
@@ -46,15 +44,16 @@ void BLMDMenger::draw(){
     mengerShader.setUniform1f("uTime", ofGetElapsedTimeMillis() * 0.001);
     
     if(set == 1) {
-        mengerShader.setUniformTexture("texture1", res.carpet3.getTexture(), 1);
+        mengerShader.setUniformTexture("texture1", res.carpetMenger.getTexture(), 1);
         mengerShader.setUniformTexture("texture2", res.carpet2.getTexture(), 2);
     } else if(set == 2) {
-        mengerShader.setUniformTexture("texture1", res.carpetMenger.getTexture(), 1);
+        mengerShader.setUniformTexture("texture1", res.carpet3.getTexture(), 1);
         mengerShader.setUniformTexture("texture2", res.carpet2.getTexture(), 2);
     }
     
-    mengerShader.setUniform1f("speed", ofMap(audioEnergy,0,1, 0.15, 0.25));
-    mengerShader.setUniform1f("iteration", ofMap(iteration,0,1, 4.5, 5.5));
+    mengerShader.setUniform1f("speed", 21-ofMap(audioEnergy, 0, 1, 0, 1));
+    mengerShader.setUniform1f("iteration", iteration);
+    // mengerShader.setUniform1f("iteration", 4);
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
     mengerShader.end();
 }

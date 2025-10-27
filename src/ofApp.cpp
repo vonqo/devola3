@@ -58,14 +58,33 @@ void ofApp::setup(){
     camData.allocate(camWidth, camHeight, OF_PIXELS_RGB);
     camTex.allocate(camWidth, camHeight, GL_RGB);
     
-    // --- SCENE MANAGER SETUP --- //
-    sceneManager.addScene(std::make_shared<BLMDBlank>(soundInEv));
-    sceneManager.addScene(std::make_shared<BLMDMirror>(soundInEv));
-    sceneManager.addScene(std::make_shared<BLMDGlitch>(soundInEv));
-    sceneManager.addScene(std::make_shared<BLMDMenger>(soundInEv));
-    sceneManager.addScene(std::make_shared<BLMDDatamosh>(soundInEv, cameraInEv));
-    sceneManager.addScene(std::make_shared<BLMDOrnament>(soundInEv, cameraInEv));
-    sceneManager.addScene(std::make_shared<SpectogramScene>(soundInEv));
+    // --- SCENE SETUP --- //
+    dScene blmdBlank       = {"BLMD Blank",
+                                '0', std::make_shared<BLMDBlank>(soundInEv)};
+    dScene blmdMirror      = {"BLMD Mirror",
+                                '1', std::make_shared<BLMDMirror>(soundInEv)};
+    dScene blmdGlitch      = {"BLMD Glitch",
+                                '2', std::make_shared<BLMDGlitch>(soundInEv)};
+    dScene blmdMenger      = {"BLMD Menger",
+                                '3', std::make_shared<BLMDMenger>(soundInEv)};
+    dScene blmdDatamosh    = {"BLMD Datamosh",
+                                '4', std::make_shared<BLMDDatamosh>(soundInEv, cameraInEv)};
+    dScene blmdOrnament    = {"BLMD Ornament",
+                                '5', std::make_shared<BLMDOrnament>(soundInEv, cameraInEv)};
+    dScene spectogram      = {"Spectogram",
+                                '9', std::make_shared<SpectogramScene>(soundInEv)};
+    
+    scenes.push_back(blmdBlank);
+    scenes.push_back(blmdMirror);
+    scenes.push_back(blmdGlitch);
+    scenes.push_back(blmdMenger);
+    scenes.push_back(blmdDatamosh);
+    scenes.push_back(blmdOrnament);
+    scenes.push_back(spectogram);
+    
+    for(auto& scene : scenes) {
+        sceneManager.addScene(scene.scene);
+    }
     
     sceneManager.setExitByTime(false);
     sceneManager.setSceneDuration(0, 0);
@@ -272,14 +291,12 @@ void ofApp::keyPressed(int key){
     if(topPadding->getFocused() || bottomPadding->getFocused() || leftPadding->getFocused() || rightPadding->getFocused()) {
         
     } else {
-        if(key == '1') sceneManager.changeScene(1);
-        if(key == '2') sceneManager.changeScene(2);
-        if(key == '3') sceneManager.changeScene(3);
-        if(key == '4') sceneManager.changeScene(4);
-        if(key == '5') sceneManager.changeScene(5);
-        
-        if(key == '9') sceneManager.changeScene(6);
-        if(key == '0') sceneManager.changeScene(0);
+        for(int i = 0; i < scenes.size(); i++) {
+            if(key == scenes[i].key){
+                sceneManager.changeScene(i);
+                break;
+            }
+        }
     }
 }
 

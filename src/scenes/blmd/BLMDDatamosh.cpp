@@ -63,14 +63,17 @@ void BLMDDatamosh::draw(){
     datamoshBuffer.draw(0,0);
     tintBuffer.end();
     
-    goldensilkShader.begin();
-    goldensilkShader.setUniform1f("time", ofGetElapsedTimeMillis() * 0.001);
-    goldensilkShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
-    goldensilkShader.setUniformTexture("texture1", tintBuffer.getTexture(), 1);
-    ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
-    goldensilkShader.end();
-    
-    drawBorder();
+    if(set == 2) {
+        goldensilkShader.begin();
+        goldensilkShader.setUniform1f("time", ofGetElapsedTimeMillis() * 0.001);
+        goldensilkShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
+        goldensilkShader.setUniformTexture("texture1", tintBuffer.getTexture(), 1);
+        ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
+        goldensilkShader.end();
+        drawBorder();
+    } else if(set == 1) {
+        tintBuffer.draw(0,0);
+    }
 }
 
 //--------------------------------------------------------------
@@ -86,6 +89,9 @@ void BLMDDatamosh::keyPressed(int key){
     if(key == OF_KEY_DOWN) {
         isFlip = false;
     }
+    
+    if(key == 'a' || key == 'A') set = 1;
+    if(key == 's' || key == 'S') set = 2;
 }
 
 //--------------------------------------------------------------

@@ -38,6 +38,7 @@ public:
     void onCameraInput(ofPixels & input);
     void drawBorder();
     
+    int set = 1;
     float iteration = 4.5;
     float audioEnergy = 0;
     bool isFlip = false;

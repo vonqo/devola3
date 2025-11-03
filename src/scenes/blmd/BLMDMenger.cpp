@@ -30,10 +30,10 @@ void BLMDMenger::update(){
     audioEnergy = ofMap(energy, 100, 255, 0, 1);
     
     if(ofGetKeyPressed(OF_KEY_LEFT)){
-        if(iteration > 1) iteration -= 0.05f;
+        if(iteration > 1) iteration -= 0.01f;
     }
     if(ofGetKeyPressed(OF_KEY_RIGHT)){
-        if(iteration < 10) iteration += 0.05f;
+        if(iteration < 6) iteration += 0.01f;
     }
 }
 
@@ -62,7 +62,6 @@ void BLMDMenger::draw(){
 void BLMDMenger::keyPressed(int key){
     if(key == 'a' || key == 'A') set = 1;
     if(key == 's' || key == 'S') set = 2;
-    
 }
 
 //--------------------------------------------------------------
